@@ -19732,15 +19732,25 @@ textarea.form-control-lg {
   font-family: "Montserrat", sans-serif;
 }
 
-#sobre .container .row .imgSobre {
-  width: 320px;
+header .navbar {
+  border-bottom: 0.125em solid rgb(0, 0, 0);
+}
+header #navbarText {
+  justify-content: flex-end;
 }
 
-#projetos .container .row .imgProjeto {
-  width: 320px;
+#sobre .container {
+  padding-top: 3em;
 }
+#sobre .container .row .imgSobre {
+  width: 20em;
+}
+
 #projetos .container .row .textoProjeto {
   text-align: end;
+}
+#projetos .container .row .imgProjeto {
+  width: 20em;
 }
 
 #experiencias .container .row a {
@@ -19773,7 +19783,6 @@ textarea.form-control-lg {
 #experiencias .container .row .imgCertificado:hover {
   transform: scale(1.3);
 }
-
 #contato .container .row .imgContato {
   padding: 0 25% 0 25%;
 }
@@ -19786,4 +19795,163 @@ textarea.form-control-lg {
 }
 #rodape .container .row .rodape-copyright {
   text-align: right;
+}
+
+.textoProjeto h2, .textoProjeto .h2 {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  opacity: 0;
+}
+.textoProjeto h2[data-scroll=in], .textoProjeto [data-scroll=in].h2 {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.textoProjeto h2:before, .textoProjeto .h2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transform-origin: left;
+  transition: 0.5s;
+}
+.textoProjeto h2[data-scroll=in]:before, .textoProjeto [data-scroll=in].h2:before {
+  transform: scaleX(0);
+  transition-delay: 0.5s;
+}
+.textoProjeto h3, .textoProjeto .h3 {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  opacity: 0;
+}
+.textoProjeto h3[data-scroll=in], .textoProjeto [data-scroll=in].h3 {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.textoProjeto h3:before, .textoProjeto .h3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transform-origin: left;
+  transition: 0.5s;
+}
+.textoProjeto h3[data-scroll=in]:before, .textoProjeto [data-scroll=in].h3:before {
+  transform: scaleX(0);
+  transition-delay: 0.5s;
+}
+.textoProjeto p {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  opacity: 0;
+}
+.textoProjeto p[data-scroll=in] {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.textoProjeto p:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transform-origin: left;
+  transition: 0.5s;
+}
+.textoProjeto p[data-scroll=in]:before {
+  transform: scaleX(0);
+  transition-delay: 0.5s;
+}
+.textoProjeto a {
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  opacity: 0;
+}
+.textoProjeto a[data-scroll=in] {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.textoProjeto a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transform-origin: left;
+  transition: 0.5s;
+}
+.textoProjeto a[data-scroll=in]:before {
+  transform: scaleX(0);
+  transition-delay: 0.5s;
+}
+
+.section-img-inner {
+  width: 40%;
+  mix-blend-mode: multiply;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: blur(30px);
+  opacity: 0;
+  transition: 0.6s ease, opacity 0.6s ease, background-position 0.8s ease;
+}
+
+.section-body {
+  display: flex;
+  align-items: center;
+}
+
+.section-text {
+  text-align: end;
+}
+
+.section[data-scroll=in] .section-img-inner {
+  opacity: 1;
+  background-position: 50% 50%;
+  filter: blur(0);
+}
+
+.section.active .section-img-inner {
+  opacity: 1;
+  background-position: 50% 50%;
+  filter: blur(0);
+}
+
+h2, .h2 {
+  font-size: 3vw;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+.projeto1 {
+  padding-top: 3em;
+}
+
+.projeto2 {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.projeto3 {
+  padding-top: 3em;
 }/*# sourceMappingURL=main.css.map */

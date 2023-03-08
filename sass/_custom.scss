@@ -4,11 +4,23 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+header{
+    .navbar{
+        border-bottom: 0.125em solid rgb(0, 0, 0);
+    }
+
+    #navbarText{
+        justify-content: flex-end;
+    }
+
+}
+
 #sobre{
     .container{
+        padding-top: 3em;
         .row{
             .imgSobre{
-                width: 320px;
+                width: 20em;
             }
         }
     }
@@ -17,11 +29,12 @@
 #projetos{
     .container{
         .row{
-            .imgProjeto{
-                width: 320px;
-            }
             .textoProjeto{
                 text-align: end;
+            }
+            
+            .imgProjeto{
+                width: 20em;
             }
         }
     }
@@ -62,6 +75,10 @@
                     transform: scale(1.3);
                 }
             }
+            
+        }
+
+        button{
         }
     }
 }

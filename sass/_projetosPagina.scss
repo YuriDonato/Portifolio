@@ -1,0 +1,49 @@
+.section-img-inner {
+    width: 40%;
+    mix-blend-mode: multiply;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: blur(30px);
+    opacity: 0;
+    transition: .6s ease, opacity .6s ease, background-position .8s ease;
+}
+.section-body {
+    display: flex;
+    align-items: center;
+}
+.section-text {
+    text-align: end;
+}
+
+.section[data-scroll="in"]{
+    .section-img-inner{
+        opacity: 1;
+        background-position: 50% 50%;
+        filter: blur(0);
+    }
+
+}
+
+.section.active .section-img-inner {
+    opacity: 1;
+    background-position: 50% 50%;
+    filter: blur(0);
+}
+h2 {
+    font-size: 3vw;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+
+.projeto1{
+    padding-top: 3em;
+}
+
+.projeto2{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.projeto3{
+    padding-top: 3em;
+}
