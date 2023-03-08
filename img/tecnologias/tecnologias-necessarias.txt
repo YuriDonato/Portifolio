@@ -1,0 +1,18 @@
+Icones de:
+HTML
+JavaScript
+CSS 
+Python
+Docker
+CircleCI
+DevOps
+SQL
+Django Rest Framework
+Kotlin
+Android Studio
+Sass
+Gulp
+Bootstrap
+JQuery
+
+Aqui tem todos: https://www.svgrepo.com/

@@ -1,0 +1,93 @@
+*{
+    // border: 1px dashed hotpink;
+    // font-family: Roboto, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sobre{
+    .container{
+        .row{
+            .imgSobre{
+                width: 320px;
+            }
+        }
+    }
+}
+
+#projetos{
+    .container{
+        .row{
+            .imgProjeto{
+                width: 320px;
+            }
+            .textoProjeto{
+                text-align: end;
+            }
+        }
+    }
+}
+
+#experiencias{
+    .container{
+        .row{
+            a{
+                text-decoration: none;
+                font-size: 1.5em;
+            }
+
+            .imgTecnologias{
+                align-self: center;
+                width: 100%;
+                transition: all 0.2s;
+                transition-duration: 0.2s;
+                transition-timing-function: ease;
+                transition-delay: 0s;
+                transition-property: all;
+                vertical-align: middle;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            
+            .imgCertificado{
+                align-self: center;
+                width: 75%;
+                transition: all 0.2s;
+                transition-duration: 0.2s;
+                transition-timing-function: ease;
+                transition-delay: 0s;
+                transition-property: all;
+                vertical-align: middle;
+                &:hover{
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
+}
+
+#contato{
+    .container{
+        .row{
+            .imgContato{
+                padding: 0 25% 0 25% ;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+#rodape{
+    .container{
+        .row{
+            a{
+            text-decoration: none;
+            }
+            .rodape-copyright{
+                text-align: right;
+            }
+        }
+    }
+}
