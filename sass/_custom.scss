@@ -21,6 +21,7 @@ header{
         .row{
             .imgSobre{
                 width: 20em;
+                border-radius: 25%;
             }
         }
     }
@@ -35,10 +36,13 @@ header{
             
             .imgProjeto{
                 width: 20em;
+                
             }
         }
     }
 }
+
+
 
 #experiencias{
     .container{
