@@ -6,7 +6,7 @@
 
     }
     &:hover{
-        transform: scale(1.3);
+        transform: scale(1.1);
     }
     // por width 80 no celular
     mix-blend-mode: multiply;
@@ -85,6 +85,15 @@ h2 {
                 object-position: 0% 0%; 
             }
         }
+        h2{
+            font-size: 5vh;
+        }
+        p{
+            font-size: 3vh;
+        }
+        .ultimoProjeto{
+            padding-bottom: 5%;
+        }
     }
 
     .containerProjeto{
@@ -122,6 +131,12 @@ h2 {
             
             object-fit: cover;
             object-position: 0% 0%; 
+        }
+        h2{
+            font-size: 5vh;
+        }
+        p{
+            font-size: 3vh;
         }
     }
 
