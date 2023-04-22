@@ -21484,6 +21484,8 @@ header #navbarText {
 }
 
 #contato .container .row .imgContato {
+  max-width: 20em;
+  border-radius: 40%;
   padding: 0 25% 0 25%;
 }
 
