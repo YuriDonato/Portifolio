@@ -13396,10 +13396,15 @@ fieldset:disabled .btn {
   }
 }
 
+/*!
+ * Bootstrap Icons (https://icons.getbootstrap.com/)
+ * Copyright 2019-2023 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE.md)
+ */
 @font-face {
   font-display: block;
   font-family: "bootstrap-icons";
-  src: url('./fonts/"bootstrap-icons".woff2?24e3eb84d0bcaf83d77f904c78ac1f47') format("woff2"), url('./fonts/"bootstrap-icons".woff?24e3eb84d0bcaf83d77f904c78ac1f47') format("woff");
+  src: url("./fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47") format("woff2"), url("./fonts/bootstrap-icons.woff?24e3eb84d0bcaf83d77f904c78ac1f47") format("woff");
 }
 
 .bi::before,
@@ -15099,10 +15104,6 @@ fieldset:disabled .btn {
 
 .bi-cloud-hail::before {
   content: "";
-}
-
-.bi-cloud-haze-1::before {
-  content: "";
 }
 
 .bi-cloud-haze-fill::before {
@@ -19085,10 +19086,6 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-envelope-check-1::before {
-  content: "";
-}
-
 .bi-envelope-check-fill::before {
   content: "";
 }
@@ -19097,20 +19094,12 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-envelope-dash-1::before {
-  content: "";
-}
-
 .bi-envelope-dash-fill::before {
   content: "";
 }
 
 .bi-envelope-dash::before {
   content: "";
-}
-
-.bi-envelope-exclamation-1::before {
-  content: "";
 }
 
 .bi-envelope-exclamation-fill::before {
@@ -19129,20 +19118,12 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-envelope-slash-1::before {
-  content: "";
-}
-
 .bi-envelope-slash-fill::before {
   content: "";
 }
 
 .bi-envelope-slash::before {
   content: "";
-}
-
-.bi-envelope-x-1::before {
-  content: "";
 }
 
 .bi-envelope-x-fill::before {
@@ -19179,14 +19160,6 @@ fieldset:disabled .btn {
 
 .bi-meta::before {
   content: "";
-}
-
-.bi-mortorboard-fill::before {
-  content: "";
-}
-
-.bi-mortorboard::before {
-  content: "";
 }
 
 .bi-nintendo-switch::before {
@@ -19261,10 +19234,6 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-send-exclamation-1::before {
-  content: "";
-}
-
 .bi-send-exclamation-fill::before {
   content: "";
 }
@@ -19307,10 +19276,6 @@ fieldset:disabled .btn {
 
 .bi-steam::before {
   content: "";
-}
-
-.bi-terminal-dash-1::before {
-  content: "";
 }
 
 .bi-terminal-dash::before {
@@ -19429,10 +19394,6 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-displayport-1::before {
-  content: "";
-}
-
 .bi-displayport::before {
   content: "";
 }
@@ -19479,14 +19440,6 @@ fieldset:disabled .btn {
 
 .bi-router::before {
   content: "";
-}
-
-.bi-ssd-fill::before {
-  content: "";
-}
-
-.bi-ssd::before {
-  content: "";
 }
 
 .bi-thunderbolt-fill::before {
@@ -19913,10 +19866,6 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-filetype-ppt-1::before {
-  content: "";
-}
-
 .bi-filetype-ppt::before {
   content: "";
 }
@@ -19975,10 +19924,6 @@ fieldset:disabled .btn {
 
 .bi-filetype-woff::before {
   content: "";
-}
-
-.bi-filetype-xls-1::before {
-  content: "";
 }
 
 .bi-filetype-xls::before {
@@ -20149,14 +20094,6 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-1-circle-1::before {
-  content: "";
-}
-
-.bi-1-circle-fill-1::before {
-  content: "";
-}
-
 .bi-1-circle-fill::before {
   content: "";
 }
@@ -20171,14 +20108,6 @@ fieldset:disabled .btn {
 
 .bi-1-square::before {
   content: "";
-}
-
-.bi-2-circle-1::before {
-  content: "";
-}
-
-.bi-2-circle-fill-1::before {
-  content: "";
 }
 
 .bi-2-circle-fill::before {
@@ -20197,14 +20126,6 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-3-circle-1::before {
-  content: "";
-}
-
-.bi-3-circle-fill-1::before {
-  content: "";
-}
-
 .bi-3-circle-fill::before {
   content: "";
 }
@@ -20219,14 +20140,6 @@ fieldset:disabled .btn {
 
 .bi-3-square::before {
   content: "";
-}
-
-.bi-4-circle-1::before {
-  content: "";
-}
-
-.bi-4-circle-fill-1::before {
-  content: "";
 }
 
 .bi-4-circle-fill::before {
@@ -20245,14 +20158,6 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-5-circle-1::before {
-  content: "";
-}
-
-.bi-5-circle-fill-1::before {
-  content: "";
-}
-
 .bi-5-circle-fill::before {
   content: "";
 }
@@ -20267,14 +20172,6 @@ fieldset:disabled .btn {
 
 .bi-5-square::before {
   content: "";
-}
-
-.bi-6-circle-1::before {
-  content: "";
-}
-
-.bi-6-circle-fill-1::before {
-  content: "";
 }
 
 .bi-6-circle-fill::before {
@@ -20293,14 +20190,6 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-7-circle-1::before {
-  content: "";
-}
-
-.bi-7-circle-fill-1::before {
-  content: "";
-}
-
 .bi-7-circle-fill::before {
   content: "";
 }
@@ -20317,14 +20206,6 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-8-circle-1::before {
-  content: "";
-}
-
-.bi-8-circle-fill-1::before {
-  content: "";
-}
-
 .bi-8-circle-fill::before {
   content: "";
 }
@@ -20339,14 +20220,6 @@ fieldset:disabled .btn {
 
 .bi-8-square::before {
   content: "";
-}
-
-.bi-9-circle-1::before {
-  content: "";
-}
-
-.bi-9-circle-fill-1::before {
-  content: "";
 }
 
 .bi-9-circle-fill::before {
@@ -20421,14 +20294,6 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-c-circle-1::before {
-  content: "";
-}
-
-.bi-c-circle-fill-1::before {
-  content: "";
-}
-
 .bi-c-circle-fill::before {
   content: "";
 }
@@ -20467,14 +20332,6 @@ fieldset:disabled .btn {
 
 .bi-cassette::before {
   content: "";
-}
-
-.bi-cc-circle-1::before {
-  content: "";
-}
-
-.bi-cc-circle-fill-1::before {
-  content: "";
 }
 
 .bi-cc-circle-fill::before {
@@ -20549,14 +20406,6 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-h-circle-1::before {
-  content: "";
-}
-
-.bi-h-circle-fill-1::before {
-  content: "";
-}
-
 .bi-h-circle-fill::before {
   content: "";
 }
@@ -20589,14 +20438,6 @@ fieldset:disabled .btn {
   content: "";
 }
 
-.bi-p-circle-1::before {
-  content: "";
-}
-
-.bi-p-circle-fill-1::before {
-  content: "";
-}
-
 .bi-p-circle-fill::before {
   content: "";
 }
@@ -20627,14 +20468,6 @@ fieldset:disabled .btn {
 
 .bi-prescription2::before {
   content: "";
-}
-
-.bi-r-circle-1::before {
-  content: "";
-}
-
-.bi-r-circle-fill-1::before {
-  content: "";
 }
 
 .bi-r-circle-fill::before {
@@ -21403,7 +21236,6 @@ fieldset:disabled .btn {
 
 * {
   font-family: 'Montserrat', sans-serif;
-  background-color: beige;
 }
 
 header .navbar {
@@ -21414,6 +21246,10 @@ header #navbarText {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.background {
+  background-color: beige;
 }
 
 #sobre .container {
