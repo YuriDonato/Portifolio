@@ -21622,7 +21622,7 @@ h2, .h2 {
   }
   #projetosPC img {
     width: 20em;
-    height: 10em;
+    height: 15em;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 0% 0%;
