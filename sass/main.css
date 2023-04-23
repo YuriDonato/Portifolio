@@ -21249,6 +21249,14 @@ header #navbarText {
           justify-content: flex-end;
 }
 
+.navbar-toggler-icon {
+  color: greenyellow;
+}
+
+.nav-link {
+  color: greenyellow;
+}
+
 h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
   color: #fff;
 }
