@@ -5,6 +5,9 @@
     color: #fff;
 }
 
+a{
+    color: #036434;
+}
 header{
     .navbar{
         border-bottom: 0.125em solid rgb(0, 0, 0);
@@ -66,6 +69,7 @@ h1.navbar-brand.m-0.section-title{
         .row{
             a{
                 text-decoration: none;
+                color: #036434;
                 font-size: 1.5em;
             }
 
@@ -113,6 +117,7 @@ h1.navbar-brand.m-0.section-title{
                 padding: 0 25% 0 25% ;
             }
             a{
+                color: #036434;
                 text-decoration: none;
             }
         }
@@ -123,6 +128,7 @@ h1.navbar-brand.m-0.section-title{
     .container{
         .row{
             a{
+            color: #036434;
             text-decoration: none;
             }
             .rodape-copyright{

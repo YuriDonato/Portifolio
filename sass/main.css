@@ -21239,6 +21239,10 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
+a {
+  color: #036434;
+}
+
 header .navbar {
   border-bottom: 0.125em solid black;
 }
@@ -21284,6 +21288,7 @@ h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
 
 #experiencias .container .row a {
   text-decoration: none;
+  color: #036434;
   font-size: 1.5em;
 }
 
@@ -21340,10 +21345,12 @@ h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
 }
 
 #contato .container .row a {
+  color: #036434;
   text-decoration: none;
 }
 
 #rodape .container .row a {
+  color: #036434;
   text-decoration: none;
 }
 
