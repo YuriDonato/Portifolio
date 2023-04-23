@@ -77,6 +77,11 @@ h2 {
 
 // Breakpoint Desktop
 @media screen and (min-width: 791px){
+    *{
+        h2{
+            font-size: 5vh;
+        }
+    }
     #projetosPC{
         .container{
             img{
@@ -120,6 +125,11 @@ h2 {
 
 // Breakpoint Mobile
 @media screen and (max-width: 790px){
+    *{
+        h2{
+            font-size: 5vh;
+        }
+    }
     #projetosPC{
         m{
             display: block;

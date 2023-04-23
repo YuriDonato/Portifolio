@@ -21403,6 +21403,7 @@ fieldset:disabled .btn {
 
 * {
   font-family: 'Montserrat', sans-serif;
+  background-color: beige;
 }
 
 header .navbar {
@@ -21731,6 +21732,9 @@ h2, .h2 {
 }
 
 @media screen and (min-width: 791px) {
+  * h2, * .h2 {
+    font-size: 5vh;
+  }
   #projetosPC .container img {
     height: 25em;
     -o-object-fit: cover;
@@ -21773,6 +21777,9 @@ h2, .h2 {
 }
 
 @media screen and (max-width: 790px) {
+  * h2, * .h2 {
+    font-size: 5vh;
+  }
   #projetosPC m {
     display: block;
     text-align: -webkit-center;

@@ -20,9 +20,53 @@
 <body>
 
     <!-- Header -->
+    <div id="#top"></div>
+    <header class="navbar navbar-expand-lg p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Yuri Vinicius</h1>
 
+            <!-- Menu Hamburguer // Nav bar -->
+
+            <button class="navbar-toggler mb-2" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#top">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conhecimentos">Conhecimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursando">Cursando</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificacoes">Certificações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetosPC">Projetos</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <div class="container">
+        <hr class="m-0">
+    </div>
+    
+
+<!-- 
     <section id="header">
-        <!-- Por o nome yuri com padding -->
+        <!- Por o nome yuri com padding --
         <div class="container">
             <header>
                 <nav class="navbar navbar-expand-lg navbar-light ">
@@ -49,10 +93,10 @@
                             </li>
                         </ul>
                     </div>
-                    </nav>
+                </nav>
             </header>
         </div>
-    </section>
+    </section> -->
 
     <!-- Sobre mim -->
     <section id="sobre">
@@ -73,33 +117,40 @@
         <section id="experiencias">
             <div class="container">
     
-                <div class="row pt-5">
+                <div class="row pt-5" id="conhecimentos">
                     <center>
                         <h2 class="fw-bold">Conhecimentos</h2>
                     </center>
                     <br>
                     <!-- layout de grid com tecnologia, parecido com helena siena -->
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <img class="imgTecnologias" src="./img/tecnologias/bootstrap.png" alt="">
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <img class="imgTecnologias" src="./img/tecnologias/css.png" alt="">
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <img class="imgTecnologias" src="./img/tecnologias/html.png" alt="">
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <img class="imgTecnologias" src="./img/tecnologias/java.png" alt="">
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <img class="imgTecnologias" src="./img/tecnologias/kotlin.png" alt="">
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="col-sm-1 col-md-4 col-lg-4">
                         <img class="imgTecnologias" src="./img/tecnologias/python.png" alt="">
                     </div>
+                    <div class="col-sm-1 col-md-4 col-lg-4">
+                        <img class="imgTecnologias" src="./img/tecnologias/java.png" alt="">
+                    </div>
+                    <div class="col-sm-1 col-md-4 col-lg-4">
+                        <img class="imgTecnologias" src="./img/tecnologias/kotlin.png" alt="">
+                    </div>
+                    <!-- !POR ESSAS TECNOLOGIAS NA PAGINA SEPARADA -->
+                    <!-- <div class="col-sm-1 col-md-4 col-lg-4">
+                        <img class="imgTecnologias" src="./img/tecnologias/css.png" alt="">
+                    </div>
+                    <div class="col-sm-1 col-md-4 col-lg-4">
+                        <img class="imgTecnologias" src="./img/tecnologias/html.png" alt="">
+                    </div>
+                    <div class="col-sm-1 col-md-4 col-lg-4">
+                        <img class="imgTecnologias" src="./img/tecnologias/bootstrap.png" alt="">
+                    </div> -->
+                    
+                    <center>
+                        <button class="btn btn-secondary">+ Tecnologias</button> 
+                    </center>
                 </div>
-    
-                <div class="row pt-5">
+
+                <hr>
+
+                <div class="row pt-5" id="cursando">
                     <center>
                         <h2 class="fw-bold">Cursando</h2>
                     </center>
@@ -116,7 +167,7 @@
                     </div> -->
                 </div>
     
-                <div class="row pt-5">
+                <div class="row pt-5 pb-3" id="certificacoes">
                     <center>
                         <h2 class="fw-bold">Certificacoes</h2>
                     </center>
@@ -132,7 +183,7 @@
                             <img class="imgCertificado" src="./img/declaracao-de-participacao/5-passos.png" alt="">
                         </center>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-6 pt-5">
+                    <div class="col-sm-12 col-md-6 col-lg-6 pt-5 pb-3">
                         <center>
                             <img class="imgCertificado" src="./img/declaracao-de-participacao/criando-portifolio.png" alt="">
                         </center>
@@ -140,19 +191,22 @@
                     <!-- <div class="col-sm-12 col-md-6 col-lg-6">cert3</div>
                     <div class="col-sm-12 col-md-6 col-lg-6">cert4</div> -->
                     <!-- Botao que leva a segunda pagina so com certificados -->
+                    <center>
+                        <button class="btn btn-secondary">+ Certificacoes</button> 
+                    </center>
                 </div>
-                <center>
-                    <button class="btn btn-secondary">+ Certificacoes</button> 
-                </center>
-    
-                <hr>
                 
+                <hr class="m-0">          
+
             </div>
-    
+
         </section>
+
+
 
     <!-- Projetos -->
     <div id="projetosPC">
+
         <center>
             <h2 class="fw-bold pt-3">Projetos</h2>
         </center>
@@ -199,13 +253,14 @@
                 </div>
             </div>
 
+            <center>
+                <button class="btn btn-secondary">+ Projetos</button> 
+            </center>
             <hr class="linhaHorizontal">
 
         </div>
 
-        <center>
-            <button class="btn btn-secondary">+ Projetos</button> 
-        </center>
+
 <!-- 
         <div class="container section projeto3">
             <div class="section-img">
