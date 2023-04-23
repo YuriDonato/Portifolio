@@ -21250,11 +21250,11 @@ header #navbarText {
 }
 
 .navbar-toggler-icon {
-  color: greenyellow;
+  color: #036434;
 }
 
 .nav-link {
-  color: greenyellow;
+  color: #036434;
 }
 
 h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
@@ -21376,7 +21376,7 @@ h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #fff;
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transition: 0.5s;
@@ -21415,7 +21415,7 @@ h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #fff;
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transition: 0.5s;
@@ -21454,7 +21454,7 @@ h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #fff;
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transition: 0.5s;
@@ -21493,7 +21493,7 @@ h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #fff;
   -webkit-transform-origin: left;
           transform-origin: left;
   -webkit-transition: 0.5s;
