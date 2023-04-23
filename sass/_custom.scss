@@ -2,6 +2,7 @@
     // border: 1px dashed hotpink;
     // font-family: Roboto, sans-serif;
     font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
 
 header{
@@ -14,8 +15,12 @@ header{
     }
 
 }
+
+h1.navbar-brand.m-0.section-title{
+    color: #fff;
+}
 .background{
-    background-color: beige;
+    background-color: rgb(71, 71, 71);
 }
 
 #sobre{

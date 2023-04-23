@@ -21236,6 +21236,7 @@ fieldset:disabled .btn {
 
 * {
   font-family: 'Montserrat', sans-serif;
+  color: #fff;
 }
 
 header .navbar {
@@ -21248,8 +21249,12 @@ header #navbarText {
           justify-content: flex-end;
 }
 
+h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
+  color: #fff;
+}
+
 .background {
-  background-color: beige;
+  background-color: #474747;
 }
 
 #sobre .container {
@@ -21496,7 +21501,6 @@ header #navbarText {
 
 .section-img-inner {
   width: 50%;
-  mix-blend-mode: multiply;
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-filter: blur(30px);
@@ -21577,6 +21581,7 @@ h2, .h2 {
        object-fit: cover;
     -o-object-position: 0% 0%;
        object-position: 0% 0%;
+    opacity: 75%;
   }
   #projetosPC h2, #projetosPC .h2 {
     font-size: 5vh;
@@ -21623,6 +21628,7 @@ h2, .h2 {
   #projetosPC img {
     width: 20em;
     height: 15em;
+    opacity: 75%;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 0% 0%;

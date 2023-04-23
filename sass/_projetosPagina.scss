@@ -9,7 +9,7 @@
         transform: scale(1.1);
     }
     // por width 80 no celular
-    mix-blend-mode: multiply;
+    // mix-blend-mode: multiply;
     background-size: contain;
     background-repeat: no-repeat;
     filter: blur(30px);
@@ -88,6 +88,7 @@ h2 {
                 height: 25em; 
                 object-fit: cover;
                 object-position: 0% 0%; 
+                opacity: 75%;
             }
         }
         h2{
@@ -138,7 +139,8 @@ h2 {
         img{
             width:20em;
             height: 15em;
-            
+            opacity: 75%;
+
             object-fit: cover;
             object-position: 0% 0%; 
         }
