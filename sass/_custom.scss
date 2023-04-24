@@ -25,10 +25,18 @@ canvas {
     color: $corTexto;
 }
 
-a{
+.textoLink{
     color: $corLink;
     &:hover{
         color: $corVerdeTom1;
+    }
+}
+
+.botaoProxPagina{
+    text-decoration: none;
+    color: $corTextoDoBotao;
+    &:hover{
+        color: $corDoBotao;
     }
 }
 

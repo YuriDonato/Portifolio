@@ -21255,12 +21255,21 @@ canvas {
   color: #F0F8FF;
 }
 
-a {
+.textoLink {
   color: #036434;
 }
 
-a:hover {
+.textoLink:hover {
   color: #05b05b;
+}
+
+.botaoProxPagina {
+  text-decoration: none;
+  color: #05b05b;
+}
+
+.botaoProxPagina:hover {
+  color: #013019;
 }
 
 h2, .h2 {
