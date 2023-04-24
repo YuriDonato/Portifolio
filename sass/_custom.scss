@@ -55,36 +55,69 @@ header{
 }
 
 // Classes
-.tituloNav{
-
-    overflow: hidden;
+#efeitoTextoNav{
+    .btnNav {
+        background: none;
+        outline: none;
+        .btnNav:active{
+            border-style: outset;
+        }
+        display: inline-block;
+        text-decoration: none;
+        width: 160px;
+        height: 42px;
+        border-radius: 10px;
+        overflow: hidden;
+    
+        box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+    }
+    
+    .btnNav.test-completed::after,
+    .btnNav.test-completed::before {
+        content: "YV";
+        position: absolute;
+        text-align: center;
+        left: 0;
+        color: $corTexto;
+        line-height: 2.5;
+    
+        transition: all 400ms;
+        top: 0;
+    }
+    
+    .btnNav.btnNav.test-completed:hover::after {
+        top: -36px;
+    }
+    
+    .btnNav.test-completed::before {
+        content: "Yuri Vinicius";
+        top: 36px;
+    }
+    
+    .btnNav.btnNav.test-completed:hover::before {
+        top: 0;
+    }
 }
-.tituloNav::after,
-.tituloNav::before {
-    content: "YV";
-    width: 100%;
-    color: $corTexto;
-    overflow-y: hidden;
 
-    transition: all 400ms;
-    top: 0;
-}
+// .tituloNav::after,.tituloNav:before{
+//     content: "YV";
+//     width: 100%;
+//     opacity: 100%;
+//     &:hover{
+//         opacity: 0%;
+//     }
+//     transition: all 400ms;
+// }
 
-.tituloNav:hover::after {
-    top: -36px;
-    opacity: 0%;
-}
+// .tituloNav::after{
+//     content: "Yuri Vinicius";
+//     opacity: 0%;
+//     &:hover{
+//         opacity: 100%;
+//     }
+// }
 
-.tituloNav::before {
-    content: "Yuri Vinicius";
-    opacity: 0%;
-    top: 36px;
-}
-
-.tituloNav:hover::before {
-    top: 0;
-    opacity: 100%;
-}
 // teste
 
 

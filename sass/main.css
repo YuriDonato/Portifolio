@@ -21285,35 +21285,48 @@ header #navbarText {
           justify-content: flex-end;
 }
 
-.tituloNav {
+#efeitoTextoNav .btnNav {
+  background: none;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  width: 160px;
+  height: 42px;
+  border-radius: 10px;
   overflow: hidden;
+  -webkit-box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
-.tituloNav::after,
-.tituloNav::before {
+#efeitoTextoNav .btnNav .btnNav:active {
+  border-style: outset;
+}
+
+#efeitoTextoNav .btnNav.test-completed::after,
+#efeitoTextoNav .btnNav.test-completed::before {
   content: "YV";
-  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 0;
   color: #F0F8FF;
-  overflow-y: hidden;
+  line-height: 2.5;
   -webkit-transition: all 400ms;
   transition: all 400ms;
   top: 0;
 }
 
-.tituloNav:hover::after {
+#efeitoTextoNav .btnNav.btnNav.test-completed:hover::after {
   top: -36px;
-  opacity: 0%;
 }
 
-.tituloNav::before {
+#efeitoTextoNav .btnNav.test-completed::before {
   content: "Yuri Vinicius";
-  opacity: 0%;
   top: 36px;
 }
 
-.tituloNav:hover::before {
+#efeitoTextoNav .btnNav.btnNav.test-completed:hover::before {
   top: 0;
-  opacity: 100%;
 }
 
 .btn-maisinfo {
