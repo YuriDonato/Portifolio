@@ -21309,7 +21309,7 @@ header #navbarText {
   position: absolute;
   text-align: center;
   left: 0;
-  color: #F0F8FF;
+  color: #036434;
   line-height: 2.5;
   -webkit-transition: all 400ms;
   transition: all 400ms;
@@ -21322,6 +21322,7 @@ header #navbarText {
 
 #efeitoTextoNav .btnNav.test-completed::before {
   content: "Yuri Vinicius";
+  color: #05b05b;
   top: 36px;
 }
 

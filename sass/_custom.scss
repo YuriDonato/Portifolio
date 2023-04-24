@@ -79,7 +79,7 @@ header{
         position: absolute;
         text-align: center;
         left: 0;
-        color: $corTexto;
+        color: rgb(3, 100, 52);
         line-height: 2.5;
     
         transition: all 400ms;
@@ -92,6 +92,7 @@ header{
     
     .btnNav.test-completed::before {
         content: "Yuri Vinicius";
+        color: $corVerdeTom1;
         top: 36px;
     }
     
