@@ -101,6 +101,9 @@ h2 {
         height: 100%;
     
     }
+    .imgProjeto{
+        height: 25em;
+    }
     *{
         h2{
             font-size: 5vh;
@@ -112,7 +115,7 @@ h2 {
     #projetosPC{
         .container{
             img{
-                height: 25em; 
+                
                 object-fit: cover;
                 object-position: 0% 0%; 
                 opacity: 75%;

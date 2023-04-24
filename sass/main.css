@@ -21709,6 +21709,9 @@ h2, .h2 {
     width: 100%;
     height: 100%;
   }
+  .imgProjeto {
+    height: 25em;
+  }
   * h2, * .h2 {
     font-size: 5vh;
   }
@@ -21716,7 +21719,6 @@ h2, .h2 {
     width: 100%;
   }
   #projetosPC .container img {
-    height: 25em;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 0% 0%;
