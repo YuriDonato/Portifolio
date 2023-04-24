@@ -21703,9 +21703,6 @@ h2, .h2 {
 }
 
 @media screen and (max-width: 790px) {
-  .textoBio {
-    margin: 5% 25% 5% 25%;
-  }
   .centerProjeto {
     -ms-flex-negative: 0;
         flex-shrink: 0;

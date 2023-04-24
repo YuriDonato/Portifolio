@@ -92,6 +92,9 @@ h2 {
 
 // Breakpoint Desktop
 @media screen and (min-width: 791px){
+    // .textoBio{
+    //     margin: 5% 25% 5% 25%;
+    // }
     *{
         h2{
             font-size: 5vh;
@@ -144,7 +147,7 @@ h2 {
 // Breakpoint Mobile
 @media screen and (max-width: 790px){
     .textoBio{
-        margin: 5% 25% 5% 25%;
+        
     }
     .centerProjeto{
         flex-shrink: 0;
