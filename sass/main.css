@@ -21601,6 +21601,7 @@ h2, .h2 {
     -o-object-position: 0% 0%;
        object-position: 0% 0%;
     opacity: 75%;
+    border-radius: 15%;
   }
   #projetosPC h2, #projetosPC .h2 {
     font-size: 5vh;
@@ -21648,6 +21649,7 @@ h2, .h2 {
     width: 20em;
     height: 15em;
     opacity: 75%;
+    border-radius: 15%;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 0% 0%;
