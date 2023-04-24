@@ -21703,6 +21703,10 @@ h2, .h2 {
 }
 
 @media screen and (max-width: 790px) {
+  .img.section-img-inner.col-lg-6.imgProjeto {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .centerProjeto {
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -21712,12 +21716,16 @@ h2, .h2 {
     padding-left: calc(var(--bs-gutter-x) * 0.5);
     margin-top: var(--bs-gutter-y);
   }
+  #projetosPC .row {
+    margin: 0;
+    padding: 0;
+  }
   #projetosPC m {
     display: block;
     text-align: -webkit-center;
   }
   #projetosPC img {
-    width: 20em;
+    width: 25em;
     height: 15em;
     opacity: 75%;
     -o-object-fit: cover;

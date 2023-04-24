@@ -146,8 +146,9 @@ h2 {
 
 // Breakpoint Mobile
 @media screen and (max-width: 790px){
-    .textoBio{
-        
+    .img.section-img-inner.col-lg-6.imgProjeto{
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .centerProjeto{
         flex-shrink: 0;
@@ -158,12 +159,16 @@ h2 {
         margin-top: var(--bs-gutter-y);
     }
     #projetosPC{
+        .row{
+            margin: 0;
+            padding: 0;
+        }
         m{
             display: block;
             text-align: -webkit-center;
         }
         img{
-            width:20em;
+            width:25em;
             height: 15em;
             opacity: 75%;
             object-fit: cover;
