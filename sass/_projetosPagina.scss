@@ -99,6 +99,10 @@ h2 {
     .imgCertificado{
         width: 100%;
         height: 100%;
+
+        &:hover{
+            transform: scale(1.05);
+        }
     
     }
     .imgProjeto{
