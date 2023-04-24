@@ -21285,6 +21285,37 @@ header #navbarText {
           justify-content: flex-end;
 }
 
+.tituloNav {
+  overflow: hidden;
+}
+
+.tituloNav::after,
+.tituloNav::before {
+  content: "YV";
+  width: 100%;
+  color: #F0F8FF;
+  overflow-y: hidden;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  top: 0;
+}
+
+.tituloNav:hover::after {
+  top: -36px;
+  opacity: 0%;
+}
+
+.tituloNav::before {
+  content: "Yuri Vinicius";
+  opacity: 0%;
+  top: 36px;
+}
+
+.tituloNav:hover::before {
+  top: 0;
+  opacity: 100%;
+}
+
 .btn-maisinfo {
   background-color: #013019;
   color: #05b05b;
