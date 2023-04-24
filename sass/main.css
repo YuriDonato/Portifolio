@@ -21703,10 +21703,6 @@ h2, .h2 {
 }
 
 @media screen and (max-width: 790px) {
-  .img.section-img-inner.col-lg-6.imgProjeto {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
   .centerProjeto {
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -21725,13 +21721,16 @@ h2, .h2 {
     text-align: -webkit-center;
   }
   #projetosPC img {
-    width: 25em;
+    width: 20em;
     height: 15em;
     opacity: 75%;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 0% 0%;
        object-position: 0% 0%;
+  }
+  #projetosPC .imgProjeto {
+    width: 25em;
   }
   canvas {
     width: 100%;

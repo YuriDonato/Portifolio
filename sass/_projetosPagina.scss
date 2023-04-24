@@ -146,10 +146,7 @@ h2 {
 
 // Breakpoint Mobile
 @media screen and (max-width: 790px){
-    .img.section-img-inner.col-lg-6.imgProjeto{
-        padding-left: 0px;
-        padding-right: 0px;
-    }
+    
     .centerProjeto{
         flex-shrink: 0;
         width: 100%;
@@ -168,11 +165,14 @@ h2 {
             text-align: -webkit-center;
         }
         img{
-            width:25em;
+            width:20em;
             height: 15em;
             opacity: 75%;
             object-fit: cover;
             object-position: 0% 0%; 
+        }
+        .imgProjeto{
+            width: 25em;
         }
     }
     canvas{
