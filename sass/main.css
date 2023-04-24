@@ -21708,6 +21708,9 @@ h2, .h2 {
 }
 
 @media screen and (max-width: 790px) {
+  h2, .h2 {
+    font-size: 8vw;
+  }
   .centerProjeto {
     -ms-flex-negative: 0;
         flex-shrink: 0;

@@ -152,6 +152,9 @@ h2 {
 
 // Breakpoint Mobile
 @media screen and (max-width: 790px){
+    h2{
+        font-size: 8vw;
+    }
     
     .centerProjeto{
         flex-shrink: 0;
