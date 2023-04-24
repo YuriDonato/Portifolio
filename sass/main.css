@@ -21236,11 +21236,19 @@ fieldset:disabled .btn {
 
 * {
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
+  color: white;
 }
 
 a {
   color: #036434;
+}
+
+h2, .h2 {
+  font-size: 5vh;
+}
+
+p {
+  font-size: 3vh;
 }
 
 hr {
@@ -21257,6 +21265,21 @@ header #navbarText {
           justify-content: flex-end;
 }
 
+.btn-maisinfo {
+  background-color: #013019;
+  color: #05b05b;
+  border: 0;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.btn-maisinfo:hover {
+  background-color: #05b05b;
+  color: #013019;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .navbar-toggler-icon {
   color: #036434;
 }
@@ -21266,7 +21289,11 @@ header #navbarText {
 }
 
 h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
-  color: #fff;
+  color: white;
+}
+
+.imgCertificado {
+  border-radius: 15%;
 }
 
 .background {
@@ -21292,7 +21319,6 @@ h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
 
 #experiencias .container .row a {
   text-decoration: none;
-  color: #036434;
   font-size: 1.5em;
 }
 
@@ -21349,12 +21375,10 @@ h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
 }
 
 #contato .container .row a {
-  color: #036434;
   text-decoration: none;
 }
 
 #rodape .container .row a {
-  color: #036434;
   text-decoration: none;
 }
 
@@ -21601,13 +21625,6 @@ h2, .h2 {
     -o-object-position: 0% 0%;
        object-position: 0% 0%;
     opacity: 75%;
-    border-radius: 15%;
-  }
-  #projetosPC h2, #projetosPC .h2 {
-    font-size: 5vh;
-  }
-  #projetosPC p {
-    font-size: 3vh;
   }
   #projetosPC .ultimoProjeto {
     padding-bottom: 5%;
@@ -21637,10 +21654,11 @@ h2, .h2 {
   }
 }
 
+.imgProjeto {
+  border-radius: 0%;
+}
+
 @media screen and (max-width: 790px) {
-  * h2, * .h2 {
-    font-size: 5vh;
-  }
   #projetosPC m {
     display: block;
     text-align: -webkit-center;
@@ -21654,12 +21672,6 @@ h2, .h2 {
        object-fit: cover;
     -o-object-position: 0% 0%;
        object-position: 0% 0%;
-  }
-  #projetosPC h2, #projetosPC .h2 {
-    font-size: 5vh;
-  }
-  #projetosPC p {
-    font-size: 3vh;
   }
   .containerProjeto {
     -webkit-box-flex: 1;

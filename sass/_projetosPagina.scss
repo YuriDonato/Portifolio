@@ -8,7 +8,6 @@
     &:hover{
         transform: scale(1.1);
     }
-    // por width 80 no celular
     // mix-blend-mode: multiply;
     background-size: contain;
     background-repeat: no-repeat;
@@ -66,13 +65,6 @@ h2 {
 }
 
 
-// --bs-gutter-x: 1.5rem;
-// --bs-gutter-y: 0;
-// display: flex;
-// flex-wrap: wrap;
-// margin-top: calc(-1 * var(--bs-gutter-y));
-// margin-right: calc(-0.5 * var(--bs-gutter-x));
-// margin-left: calc(-0.5 * var(--bs-gutter-x));
 
 
 // Breakpoint Desktop
@@ -89,15 +81,9 @@ h2 {
                 object-fit: cover;
                 object-position: 0% 0%; 
                 opacity: 75%;
-                border-radius: 15%;
             }
         }
-        h2{
-            font-size: 5vh;
-        }
-        p{
-            font-size: 3vh;
-        }
+
         .ultimoProjeto{
             padding-bottom: 5%;
         }
@@ -125,13 +111,12 @@ h2 {
     }
 }
 
+.imgProjeto{
+    border-radius: 0%;
+}
+
 // Breakpoint Mobile
 @media screen and (max-width: 790px){
-    *{
-        h2{
-            font-size: 5vh;
-        }
-    }
     #projetosPC{
         m{
             display: block;
@@ -145,12 +130,6 @@ h2 {
 
             object-fit: cover;
             object-position: 0% 0%; 
-        }
-        h2{
-            font-size: 5vh;
-        }
-        p{
-            font-size: 3vh;
         }
     }
 
