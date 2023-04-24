@@ -21818,4 +21818,68 @@ h2, .h2 {
     border-radius: 15%;
   }
 }
+
+.imgParte1 {
+  width: 20em;
+  height: 15em;
+  opacity: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
+}
+
+.imgParte2 {
+  width: 20em;
+  height: 20em;
+  opacity: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 97%;
+     object-position: 0% 97%;
+}
+
+.imgParte3 {
+  width: 20em;
+  height: 15em;
+  opacity: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 100%;
+     object-position: 0% 100%;
+}
+
+@media screen and (max-width: 790px) {
+  .efeitoBlur:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .imgParte1 {
+    width: 20em;
+    height: 15em;
+    opacity: 75%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0% 0%;
+       object-position: 0% 0%;
+  }
+  .imgParte2 {
+    width: 20em;
+    height: 20em;
+    opacity: 75%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0% 97%;
+       object-position: 0% 97%;
+  }
+  .imgParte3 {
+    width: 20em;
+    height: 15em;
+    opacity: 75%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0% 100%;
+       object-position: 0% 100%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
