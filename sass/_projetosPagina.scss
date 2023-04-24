@@ -1,5 +1,28 @@
 @import 'breakpoint';
 
+.efeitoBlur{
+    width: 50%;
+    &:hover{
+        transform: scale(1.1);
+    }
+    // mix-blend-mode: multiply;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: blur(30px);
+    opacity: 0;
+    transition: .6s ease, opacity .6s ease, background-position .8s ease;
+}
+
+.efeitoBlur[data-scroll="in"]{
+        opacity: 1;
+        background-position: 50% 50%;
+        filter: blur(0);
+}
+
+
+
+
+
 .section-img-inner {
     width: 50%;
     img:hover{
@@ -31,14 +54,14 @@
         background-position: 50% 50%;
         filter: blur(0);
     }
-
 }
 
-.section.active .section-img-inner {
-    opacity: 1;
-    background-position: 50% 50%;
-    filter: blur(0);
-}
+// .section.active .section-img-inner {
+//     opacity: 1;
+//     background-position: 50% 50%;
+//     filter: blur(0);
+// }
+
 h2 {
     font-size: 3vw;
     margin-bottom: 0.5em;
@@ -73,6 +96,9 @@ h2 {
         h2{
             font-size: 5vh;
         }
+    }
+    canvas{
+        width: 100%;
     }
     #projetosPC{
         .container{
@@ -117,6 +143,17 @@ h2 {
 
 // Breakpoint Mobile
 @media screen and (max-width: 790px){
+    .textoBio{
+        margin: 5% 25% 5% 25%;
+    }
+    .centerProjeto{
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+        margin-top: var(--bs-gutter-y);
+    }
     #projetosPC{
         m{
             display: block;
@@ -126,11 +163,12 @@ h2 {
             width:20em;
             height: 15em;
             opacity: 75%;
-            border-radius: 15%;
-
             object-fit: cover;
             object-position: 0% 0%; 
         }
+    }
+    canvas{
+        width: 100%;
     }
 
     .containerProjeto{
@@ -138,12 +176,11 @@ h2 {
         -ms-flex: 1 0 0%;
         flex: 1 0 0%;
     }
-    .centerProjeto{
-        flex-shrink: 0;
-        width: 100%;
-        max-width: 100%;
-        padding-right: calc(var(--bs-gutter-x) * 0.5);
-        padding-left: calc(var(--bs-gutter-x) * 0.5);
-        margin-top: var(--bs-gutter-y);
+
+
+    #certificacoes{
+        img{
+            border-radius: 15%;
+        }
     }
 }

@@ -1,5 +1,22 @@
 @import 'cores';
 
+// Efeito Matrix
+html, body { 
+    margin: 0;
+    height: 100%;
+}
+canvas {
+    width: 1vw;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 15%;
+    z-index: -9;
+}
+
+
 // Definições Padrão da Página
 *{
     // border: 1px dashed hotpink;
@@ -69,9 +86,10 @@ h1.navbar-brand.m-0.section-title{
     border-radius: 15%;
 }
 
-.background{
+.backgroundCor{
     // background-color: rgb(71, 71, 71);
     background-color: $corBackground;
+    z-index: -10;
 }
 
 // ID's
