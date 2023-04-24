@@ -95,6 +95,12 @@ h2 {
     // .textoBio{
     //     margin: 5% 25% 5% 25%;
     // }
+
+    .imgCertificado{
+        width: 100%;
+        height: 100%;
+    
+    }
     *{
         h2{
             font-size: 5vh;
@@ -188,6 +194,8 @@ h2 {
 
     #certificacoes{
         img{
+            width: 100%;
+            height: 100%;
             border-radius: 15%;
         }
     }

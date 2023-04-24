@@ -21348,6 +21348,7 @@ h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
 }
 
 #experiencias .container .row .imgTecnologias {
+  opacity: 85%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -21656,6 +21657,10 @@ h2, .h2 {
 }
 
 @media screen and (min-width: 791px) {
+  .imgCertificado {
+    width: 100%;
+    height: 100%;
+  }
   * h2, * .h2 {
     font-size: 5vh;
   }
@@ -21741,6 +21746,8 @@ h2, .h2 {
     flex: 1 0 0%;
   }
   #certificacoes img {
+    width: 100%;
+    height: 100%;
     border-radius: 15%;
   }
 }
