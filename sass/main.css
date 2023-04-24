@@ -21569,7 +21569,6 @@ h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
 }
 
 .efeitoBlur {
-  width: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-filter: blur(30px);
