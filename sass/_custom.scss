@@ -10,6 +10,9 @@
 
 a{
     color: $corLink;
+    &:hover{
+        color: $corVerdeTom1;
+    }
 }
 
 h2{
@@ -53,6 +56,9 @@ header{
 }
 .nav-link{
     color: #036434;
+    &:hover{
+        color: $corVerdeTom1;
+    }
 }
 
 h1.navbar-brand.m-0.section-title{

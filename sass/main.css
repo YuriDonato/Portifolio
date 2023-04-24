@@ -21236,11 +21236,15 @@ fieldset:disabled .btn {
 
 * {
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: #F0F8FF;
 }
 
 a {
   color: #036434;
+}
+
+a:hover {
+  color: #05b05b;
 }
 
 h2, .h2 {
@@ -21288,8 +21292,12 @@ header #navbarText {
   color: #036434;
 }
 
+.nav-link:hover {
+  color: #05b05b;
+}
+
 h1.navbar-brand.m-0.section-title, .navbar-brand.m-0.section-title.h1 {
-  color: white;
+  color: #F0F8FF;
 }
 
 .imgCertificado {
