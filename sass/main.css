@@ -21266,6 +21266,7 @@ canvas {
 .botaoProxPagina {
   text-decoration: none;
   color: #05b05b;
+  font-size: 1.5em;
 }
 
 .botaoProxPagina:hover {
@@ -21820,9 +21821,9 @@ h2, .h2 {
 }
 
 .imgParte1 {
-  width: 20em;
-  height: 15em;
-  opacity: 75%;
+  width: 0em;
+  height: 0em;
+  visibility: hidden;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 0% 0%;
@@ -21830,23 +21831,13 @@ h2, .h2 {
 }
 
 .imgParte2 {
-  width: 20em;
-  height: 20em;
-  opacity: 75%;
+  width: 0em;
+  height: 0em;
+  visibility: hidden;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 0% 97%;
      object-position: 0% 97%;
-}
-
-.imgParte3 {
-  width: 20em;
-  height: 15em;
-  opacity: 75%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0% 100%;
-     object-position: 0% 100%;
 }
 
 .videoProjeto1 {
@@ -21863,6 +21854,7 @@ h2, .h2 {
     width: 20em;
     height: 15em;
     opacity: 75%;
+    visibility: visible;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 0% 0%;
@@ -21872,19 +21864,11 @@ h2, .h2 {
     width: 20em;
     height: 20em;
     opacity: 75%;
+    visibility: visible;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 0% 97%;
        object-position: 0% 97%;
-  }
-  .imgParte3 {
-    width: 20em;
-    height: 15em;
-    opacity: 75%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 0% 100%;
-       object-position: 0% 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,26 +1,20 @@
+
 .imgParte1{
-    width:20em;
-    height: 15em;
-    opacity: 75%;
+    width:0em;
+    height: 0em;
+    visibility: hidden;
     object-fit: cover;
     object-position: 0% 0%; 
 }
 
 .imgParte2{
-    width:20em;
-    height: 20em;
-    opacity: 75%;
+    width:0em;
+    height: 0em;
+    visibility: hidden;
     object-fit: cover;
     object-position: 0% 97%; 
 }
 
-.imgParte3{
-    width:20em;
-    height: 15em;
-    opacity: 75%;
-    object-fit: cover;
-    object-position: 0% 100%; 
-}
 
 .videoProjeto1{
     width: 100%;
@@ -38,6 +32,7 @@
         width:20em;
         height: 15em;
         opacity: 75%;
+        visibility: visible;
         object-fit: cover;
         object-position: 0% 0%; 
     }
@@ -46,15 +41,9 @@
         width:20em;
         height: 20em;
         opacity: 75%;
+        visibility: visible;
         object-fit: cover;
         object-position: 0% 97%; 
     }
     
-    .imgParte3{
-        width:20em;
-        height: 15em;
-        opacity: 75%;
-        object-fit: cover;
-        object-position: 0% 100%; 
-    }
 }
