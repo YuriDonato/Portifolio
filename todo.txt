@@ -1,0 +1,10 @@
+tudo kkkj
+sem brincadeira:
+trazer todo o html pra react
+fazer sistema de navegacao
+criar o banco de dados
+a conexao e a pagina pro CRUD
+com autenticacao na navegacao pro CRUD
+
+FAZER A PAGINA EM SEO
+SINGLE PAGE

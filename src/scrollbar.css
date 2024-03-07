@@ -1,0 +1,21 @@
+/* Estilos da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+  height: 8px; /* Altura da barra de rolagem (para rolagem horizontal) */
+}
+
+/* Track (a trilha da barra de rolagem) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f100; /* Cor de fundo da trilha */
+}
+
+/* Handle (o "botão" que você arrasta) */
+::-webkit-scrollbar-thumb {
+  background-color: #92D1AE; /* Cor do "botão" */
+  border-radius: 4px; /* Borda arredondada */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #92d1ae8b; /* Cor do "botão" quando hover */
+}
