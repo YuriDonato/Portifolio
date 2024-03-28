@@ -5,7 +5,7 @@ export type Project = {
   category: string
   responsability: string
   imageName: string
-  
+
   explanation: string
   pageUrl: string
   repoUrl: string

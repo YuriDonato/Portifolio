@@ -7,11 +7,11 @@ import { useEffect, useState } from 'react'
 import { scaleDown as Menu } from 'react-burger-menu'
 import { PropToggleMode } from '../../models/toggleMode'
 import ToggleTheme from '../../components/ToggleTheme'
-
 import { useTheme } from 'styled-components'
-import ProjectsPage from '../../components/ProjectsPage'
 import { MdAppSettingsAlt } from 'react-icons/md'
 import AdminPage from '../../components/AdminPage'
+import Projects from '../Projects'
+import ProjectsPage from '../../components/ProjectsPage'
 
 interface Page {
   selectedPage: string
@@ -102,7 +102,7 @@ const Home = ({ toggleMode, themeName }: PropToggleMode) => {
         <S.MainCard>
           <Header />
           {selectedPage == 'home' ? <MainPage /> : <></>}
-          {selectedPage == 'projects' ? <ProjectsPage /> : <></>}
+          {selectedPage == 'projects' ? <Projects /> : <></>}
           {selectedPage == 'admin' ? <AdminPage /> : <></>}
           <Footer />
         </S.MainCard>

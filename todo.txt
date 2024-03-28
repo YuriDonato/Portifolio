@@ -1,6 +1,6 @@
 tudo kkkj
 sem brincadeira:
-trazer todo o html pra react
+trazer todo o html pra react - falta pagina do projeto
 fazer sistema de navegacao
 criar o banco de dados
 a conexao e a pagina pro CRUD

@@ -17,7 +17,6 @@ export const GlobalCss = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     // font-family: 'IM Fell DW Pica', serif;
-    // color: black;
   }
 
   body {
@@ -27,7 +26,7 @@ export const GlobalCss = createGlobalStyle`
 
 export const MainCard = styled.div`
   margin: 1rem auto 0 auto;
-  color: ${({ theme }) => theme.black};
+  color: ${({ theme }) => theme.defaultText};
   padding: 1rem;
   background-color: ${({ theme }) => theme.white};
   max-width: 600px;
