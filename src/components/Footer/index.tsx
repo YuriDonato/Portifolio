@@ -1,39 +1,35 @@
+import { useAuth } from '../../data/AuthProvider'
+import * as S from './styles'
+import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
+
 const Footer = () => {
+  const { setCurrentPage } = useAuth()
+
   return (
     <section id="rodape">
-      <div className="container">
-        <div className="row pt-5">
-          <div className="col-12">
-            <h5>Siga-me</h5>
-            <a className="textoLink" href="#linkedin"></a>
-            <a className="textoLink" href="#codepen"></a>
-            <a className="textoLink" href="#github"></a>
+      <S.FooterContainer>
+        <S.FooterSocial>
+          <h5>Siga-me</h5>
+          <S.FooterLinks
+            className="linkedin"
+            href="https://www.linkedin.com/in/yuri-donato/"
+          >
+            <IoLogoLinkedin color="white" />
+          </S.FooterLinks>
+          <S.FooterLinks href="https://github.com/YuriDonato">
+            <IoLogoGithub />
+          </S.FooterLinks>
+        </S.FooterSocial>
 
-            <h3>
-              <a className="textoLink" href="#sobre">
-                Inicio
-              </a>
-            </h3>
-            <h3>
-              <a className="textoLink" href="#projetosPC">
-                Projetos
-              </a>
-            </h3>
-            <h3>
-              <a className="textoLink" href="#experiencias">
-                Experiencias
-              </a>
-            </h3>
-            <h3>
-              <a className="textoLink" href="#contato">
-                Contato
-              </a>
-            </h3>
+        <S.FooterLinks onClick={() => setCurrentPage('home')}>
+          Inicio
+        </S.FooterLinks>
+        <S.FooterLinks onClick={() => setCurrentPage('experiencias')}>
+          Projetos
+        </S.FooterLinks>
 
-            <p className="rodape-copyright">© Yuri Vinicius 2023</p>
-          </div>
-        </div>
-      </div>
+        <S.FooterYuri>© Yuri Vinicius 2023</S.FooterYuri>
+      </S.FooterContainer>
     </section>
   )
 }

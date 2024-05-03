@@ -6,8 +6,8 @@ const Homepage = () => {
   return (
     <>
       <About />
-      <Projects />
-      <Certify />
+      {/* <Projects />
+      <Certify /> */}
       {/* contato */}
     </>
   )

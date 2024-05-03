@@ -12,13 +12,10 @@ import { MdAppSettingsAlt } from 'react-icons/md'
 import AdminPage from '../../components/AdminPage'
 import Projects from '../Projects'
 import ProjectsPage from '../../components/ProjectsPage'
-
-interface Page {
-  selectedPage: string
-}
+import { useAuth } from '../../data/AuthProvider'
 
 const Home = ({ toggleMode, themeName }: PropToggleMode) => {
-  const [selectedPage, setSelectedPage] = useState('home')
+  const { currentPage, setCurrentPage } = useAuth()
   const theme = useTheme()
 
   const MenuStyles = {
@@ -75,16 +72,16 @@ const Home = ({ toggleMode, themeName }: PropToggleMode) => {
         outerContainerId="outer-container"
         styles={MenuStyles}
       >
-        <S.CustomButton id="home" onClick={() => setSelectedPage('home')}>
+        <S.CustomButton id="home" onClick={() => setCurrentPage('home')}>
           Home
         </S.CustomButton>
         <S.CustomButton
           id="projects"
-          onClick={() => setSelectedPage('projects')}
+          onClick={() => setCurrentPage('projects')}
         >
           Projetos
         </S.CustomButton>
-        <S.CustomButton id="admin" onClick={() => setSelectedPage('admin')}>
+        <S.CustomButton id="admin" onClick={() => setCurrentPage('admin')}>
           <MdAppSettingsAlt />
         </S.CustomButton>
 
@@ -96,14 +93,14 @@ const Home = ({ toggleMode, themeName }: PropToggleMode) => {
           Contato
         </S.CustomButton> */}
         {/* <S.CustomButton className="menu-item--small">Settings</S.CustomButton> */}
-        <ToggleTheme toggleMode={toggleMode} themeName={themeName} />
+        {/* <ToggleTheme toggleMode={toggleMode} themeName={themeName} /> */}
       </Menu>
       <S.Main id="page-wrap">
         <S.MainCard>
           <Header />
-          {selectedPage == 'home' ? <MainPage /> : <></>}
-          {selectedPage == 'projects' ? <Projects /> : <></>}
-          {selectedPage == 'admin' ? <AdminPage /> : <></>}
+          {currentPage == 'home' ? <MainPage /> : <></>}
+          {currentPage == 'projects' ? <Projects /> : <></>}
+          {currentPage == 'admin' ? <AdminPage /> : <></>}
           <Footer />
         </S.MainCard>
       </S.Main>

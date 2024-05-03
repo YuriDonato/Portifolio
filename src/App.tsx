@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components'
 import { useState } from 'react'
 import { darkModeColors, lightModeColors } from './theme'
 import './scrollbar.css'
+import { AuthProvider } from './data/AuthProvider'
 
 const theme = extendTheme({
   styles: {
@@ -26,14 +27,16 @@ function App() {
 
   return (
     <ChakraProvider theme={theme}>
-      <ThemeProvider
-        theme={mode === 'light' ? lightModeColors : darkModeColors}
-      >
-        <BrowserRouter>
-          <GlobalCss />
-          <CustomRoutes toggleMode={toggleMode} themeName={mode} />
-        </BrowserRouter>
-      </ThemeProvider>
+      <AuthProvider>
+        <ThemeProvider
+          theme={mode === 'light' ? lightModeColors : darkModeColors}
+        >
+          <BrowserRouter>
+            <GlobalCss />
+            <CustomRoutes toggleMode={toggleMode} themeName={mode} />
+          </BrowserRouter>
+        </ThemeProvider>
+      </AuthProvider>
     </ChakraProvider>
   )
 }
