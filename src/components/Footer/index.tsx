@@ -24,8 +24,8 @@ const Footer = () => {
         <S.FooterLinks onClick={() => setCurrentPage('home')}>
           Inicio
         </S.FooterLinks>
-        <S.FooterLinks onClick={() => setCurrentPage('experiencias')}>
-          Projetos
+        <S.FooterLinks onClick={() => setCurrentPage('projects')}>
+          Experiências
         </S.FooterLinks>
 
         <S.FooterYuri>© Yuri Vinicius 2023</S.FooterYuri>

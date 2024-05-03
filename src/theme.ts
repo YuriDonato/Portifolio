@@ -55,7 +55,7 @@ export const darkModeColors = {
   titleAbout: colors.paleGreen,
 
   // Menu Colors
-  burgerBars: '#373a47',
+  burgerBars: '#71AB8A',
   burgerBarsHover: '#a90000',
   closeButton: '#bdc3c7',
   menuBackground: '#373a47',

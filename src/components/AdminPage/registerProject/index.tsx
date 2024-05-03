@@ -46,7 +46,7 @@ const RegisterProjectTab = () => {
 
   return (
     <>
-      <form onSubmit={createPathologyData}>
+      <form style={{ color: 'white' }} onSubmit={createPathologyData}>
         <FormControl>
           <FormLabel>Nome do Projeto</FormLabel>
           <Input

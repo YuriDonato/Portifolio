@@ -13,9 +13,11 @@ import AdminPage from '../../components/AdminPage'
 import Projects from '../Projects'
 import ProjectsPage from '../../components/ProjectsPage'
 import { useAuth } from '../../data/AuthProvider'
+import { EmptyProjectData } from '../../models/Project'
 
 const Home = ({ toggleMode, themeName }: PropToggleMode) => {
-  const { currentPage, setCurrentPage } = useAuth()
+  const { currentPage, setCurrentPage, currentProject, setCurrentProject } =
+    useAuth()
   const theme = useTheme()
 
   const MenuStyles = {
@@ -64,6 +66,10 @@ const Home = ({ toggleMode, themeName }: PropToggleMode) => {
     }
   }
 
+  useEffect(() => {
+    console.log(`${currentPage} ${currentProject.nameProject}`)
+  }, [currentPage])
+
   return (
     <div id="outer-container">
       <S.StyledMatrixRaining></S.StyledMatrixRaining>
@@ -73,17 +79,17 @@ const Home = ({ toggleMode, themeName }: PropToggleMode) => {
         styles={MenuStyles}
       >
         <S.CustomButton id="home" onClick={() => setCurrentPage('home')}>
-          Home
+          Inicio
         </S.CustomButton>
         <S.CustomButton
           id="projects"
           onClick={() => setCurrentPage('projects')}
         >
-          Projetos
+          Experiências
         </S.CustomButton>
-        <S.CustomButton id="admin" onClick={() => setCurrentPage('admin')}>
+        {/* <S.CustomButton id="admin" onClick={() => setCurrentPage('admin')}>
           <MdAppSettingsAlt />
-        </S.CustomButton>
+        </S.CustomButton> */}
 
         {/* <S.CustomButton
           id="contact"
@@ -100,7 +106,7 @@ const Home = ({ toggleMode, themeName }: PropToggleMode) => {
           <Header />
           {currentPage == 'home' ? <MainPage /> : <></>}
           {currentPage == 'projects' ? <Projects /> : <></>}
-          {currentPage == 'admin' ? <AdminPage /> : <></>}
+          {currentPage == 'project' && <Projects />}
           <Footer />
         </S.MainCard>
       </S.Main>
