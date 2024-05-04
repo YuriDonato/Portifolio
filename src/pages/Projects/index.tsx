@@ -95,6 +95,23 @@ const Projects = () => {
     columnNumber = 1
   }
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
+  const handleClick = (project: Project) => {
+    setCurrentProject(project)
+    setCurrentPage('project')
+    scrollToTop()
+  }
+
+  useEffect(() => {
+    scrollToTop()
+  }, [currentProject])
+
   return (
     <>
       {currentPage === 'projects' && ( // Verifica se a página atual é "experiências"
@@ -146,8 +163,7 @@ const Projects = () => {
                     _hover={{ bg: theme.mediumGreen }}
                     leftIcon={<FaExternalLinkAlt />} // Adiciona um ícone à esquerda do texto do botão
                     onClick={() => {
-                      setCurrentProject(project)
-                      setCurrentPage('project')
+                      handleClick(project)
                     }}
                   >
                     Ver mais

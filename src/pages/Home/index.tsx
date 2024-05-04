@@ -19,6 +19,7 @@ const Home = ({ toggleMode, themeName }: PropToggleMode) => {
   const { currentPage, setCurrentPage, currentProject, setCurrentProject } =
     useAuth()
   const theme = useTheme()
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const MenuStyles = {
     bmBurgerButton: {
@@ -70,6 +71,11 @@ const Home = ({ toggleMode, themeName }: PropToggleMode) => {
     console.log(`${currentPage} ${currentProject.nameProject}`)
   }, [currentPage])
 
+  const handleCloseMenu = (page: string) => {
+    setCurrentPage(page)
+    setIsMenuOpen(false)
+  }
+
   return (
     <div id="outer-container">
       <S.StyledMatrixRaining></S.StyledMatrixRaining>
@@ -77,13 +83,15 @@ const Home = ({ toggleMode, themeName }: PropToggleMode) => {
         pageWrapId="page-wrap"
         outerContainerId="outer-container"
         styles={MenuStyles}
+        isOpen={isMenuOpen}
+        onStateChange={(state) => setIsMenuOpen(state.isOpen)}
       >
-        <S.CustomButton id="home" onClick={() => setCurrentPage('home')}>
+        <S.CustomButton id="home" onClick={() => handleCloseMenu('home')}>
           Inicio
         </S.CustomButton>
         <S.CustomButton
           id="projects"
-          onClick={() => setCurrentPage('projects')}
+          onClick={() => handleCloseMenu('projects')}
         >
           Experiências
         </S.CustomButton>
