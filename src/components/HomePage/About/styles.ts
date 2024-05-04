@@ -2,13 +2,18 @@ import styled from 'styled-components'
 import { text } from '../../../styles'
 import { GridItem } from '@chakra-ui/react'
 
+interface MobileFlexContainerProps {
+  isMobile: boolean
+}
+
 export const Container = styled.div`
   margin-top: 2rem;
 `
 
-export const MobileFlexContainer = styled.div`
+export const MobileFlexContainer = styled.div<MobileFlexContainerProps>`
   display: flex;
-  flex-direction: column;
+  flex-direction: ${(props) => (props.isMobile ? 'column' : 'row')};
+  align-items: center;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -37,9 +42,17 @@ export const TitleContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   width: fit-content;
+  text-align: center;
 
   &:hover {
     transform: scale(1.1);
+  }
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rem;
   }
 `
 
