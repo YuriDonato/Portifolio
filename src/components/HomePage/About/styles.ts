@@ -6,6 +6,16 @@ export const Container = styled.div`
   margin-top: 2rem;
 `
 
+export const MobileFlexContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+`
 //Title area
 
 export const CustomGridItem = styled(GridItem)`
