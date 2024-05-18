@@ -28,7 +28,7 @@ const Projects = () => {
 
     // Mapeando as promessas das URLs das imagens
     const imageURLPromises = projects.map(async (project) => {
-      const spaceRef = db.imgref(storage, project.imageName) // Aqui está o problema
+      const spaceRef = db.imgref(storage, project.imageName)
       return db.imggetDownloadURL(spaceRef)
     })
 
