@@ -36,7 +36,6 @@ const Contact = () => {
   }, [name, email])
 
   const createMessage = async () => {
-    // Adicione os sintomas selecionados aos dados da patologia
     const newData = message
     const newKey = db.realtimePush(
       db.realtimeChild(db.realtimeRef(db.realtimeDatabase), 'messages')
@@ -47,7 +46,7 @@ const Contact = () => {
     )
   }
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: { preventDefault: () => void }) => {
     event.preventDefault()
     if (isAvaiable) {
       toast({
@@ -73,10 +72,12 @@ const Contact = () => {
     <S.ContactSection>
       {isMobile ? (
         <>
-          <Spline
-            style={{ transform: 'scale(1.5)', marginBottom: '3rem' }}
-            scene="https://prod.spline.design/oeRPioBttuqIPdML/scene.splinecode"
-          />{' '}
+          <Box style={{ width: '100%', height: '500px', marginBottom: '3rem' }}>
+            <Spline
+              scene="https://prod.spline.design/oeRPioBttuqIPdML/scene.splinecode"
+              style={{ width: '300px', height: '300px', marginLeft: '-5rem' }} // Ajuste o tamanho aqui conforme necessário
+            />
+          </Box>
           <S.MainContainer>
             <S.FormContainer>
               <S.Heading>{translations[language].contact.header}</S.Heading>
@@ -127,10 +128,18 @@ const Contact = () => {
         <>
           <Box as="header" w="100%" p={4}>
             <Flex justify="space-between" align="center" wrap="nowrap">
-              <Spline
-                style={{ transform: 'scale(2)' }}
-                scene="https://prod.spline.design/oeRPioBttuqIPdML/scene.splinecode"
-              />
+              <Box
+                style={{
+                  width: '800px',
+                  height: '500px',
+                  marginBottom: '3rem'
+                }}
+              >
+                <Spline
+                  scene="https://prod.spline.design/oeRPioBttuqIPdML/scene.splinecode"
+                  style={{ width: '800px', height: '500px' }} // Ajuste o tamanho aqui conforme necessário
+                />
+              </Box>
               <S.MainContainer style={{ width: '75%' }}>
                 <S.FormContainer>
                   <S.Heading>{translations[language].contact.header}</S.Heading>

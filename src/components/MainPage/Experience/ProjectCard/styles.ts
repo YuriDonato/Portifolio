@@ -1,18 +1,24 @@
 import styled from 'styled-components'
 
 export const CardContainer = styled.div`
-  background: rgb(28, 69, 46);
+  // background: rgb(28, 69, 46);
   color: rgb(255, 255, 255);
   min-height: 1px;
   position: relative;
   margin-left: 60px;
-  border-radius: 0.25em;
+  // border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px #ddd;
+  // box-shadow: 0 3px #ddd;
   box-sizing: border-box;
   margin-top: 0;
   position: relative;
   margin: 2em 0;
+
+  background: rgba(106, 255, 127, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.3px);
+  -webkit-backdrop-filter: blur(2.3px);
 `
 
 export const Title = styled.h3`
