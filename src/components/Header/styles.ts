@@ -3,13 +3,38 @@ import { text } from '../../styles'
 
 export const HeaderContainer = styled.div`
   margin-left: 3rem;
-  margin-top: 0.1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 `
 
 export const Text = styled.h1`
   color: ${({ theme }) => theme.defaultText};
   font-size: ${text.xl};
 `
+
+export const HeaderContainerButtons = styled.div`
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+`
+
+export const HeaderButtons = styled.p`
+  color: ${({ theme }) => theme.defaultText};
+  font-size: ${text.xl};
+  cursor: pointer;
+  transition: all ease 1s;
+  font-size: 18px;
+
+  &:hover {
+    color: limegreen;
+  }
+`
+
 interface CustomButtonProps {
   testCompleted?: boolean // Definindo testCompleted como uma propriedade opcional
 }
