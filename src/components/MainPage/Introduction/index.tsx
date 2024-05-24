@@ -68,9 +68,16 @@ const Introduction = () => {
                 // }}
                 _hover={{ boxShadow: 'xl' }}
               >
-                <Text fontSize="xl" fontWeight="bold" color="white">
-                  {item}
-                </Text>
+                <motion.div
+                  initial={{ opacity: 0, x: -10 }}
+                  animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -10 }}
+                  transition={{ duration: 0.8 }}
+                  key={index}
+                >
+                  <Text fontSize="xl" fontWeight="bold" color="white">
+                    {item}
+                  </Text>
+                </motion.div>
               </MotionBox>
             </motion.div>
           ))}

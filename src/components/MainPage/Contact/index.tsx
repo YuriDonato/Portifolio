@@ -4,39 +4,64 @@ import { useLanguage } from '../../../data/Language'
 import { translations } from '../../../data/Language/translations'
 import { Box, Flex, useBreakpointValue, useToast } from '@chakra-ui/react'
 import Spline from '@splinetool/react-spline'
+import * as db from '../../../services/firebase'
 
 const Contact = () => {
   const { language } = useLanguage()
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [isAvaiable, setIsAvaiable] = useState(true)
+  const [message, setMessage] = useState('')
 
   const toast = useToast()
 
   const isMobile = useBreakpointValue({ base: true, md: false })
 
   useEffect(() => {
-    if (name.length >= 1 && email.length >= 1) {
-      setIsAvaiable(true)
-    } else {
-      setIsAvaiable(false)
-    }
+    language === 'eng'
+      ? setMessage(
+          `Hi Yuri, I am ${
+            name.length <= 0 ? `[your name]` : `${name}`
+          } and I am interested in talking with you. Please send me a message and CV to ${
+            email.length <= 0 ? `[your email]` : `${email}`
+          }. Thanks!`
+        )
+      : setMessage(
+          `Olá Yuri, eu sou ${
+            name.length <= 0 ? `[seu nome]` : `${name}`
+          } e estou interessado em conversar com você. Por favor, envie-me uma mensagem e CV para ${
+            email.length <= 0 ? `[seu email]` : `${email}`
+          }. Obrigado!`
+        )
   }, [name, email])
+
+  const createMessage = async () => {
+    // Adicione os sintomas selecionados aos dados da patologia
+    const newData = message
+    const newKey = db.realtimePush(
+      db.realtimeChild(db.realtimeRef(db.realtimeDatabase), 'messages')
+    ).key
+    db.realtimeSet(
+      db.realtimeRef(db.realtimeDatabase, `messages/${newKey}`),
+      newData
+    )
+  }
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (isAvaiable) {
       toast({
-        title: 'Mensagem Enviada.',
-        description: 'Em breve entrarei em contato.',
+        title: `${translations[language].contact.successMessage}`,
+        description: `${translations[language].contact.successDescription}`,
         status: 'success',
         duration: 9000,
         isClosable: true
       })
+      createMessage()
     } else {
       toast({
-        title: 'Erro ao enviar a mensagem.',
-        description: 'Verifique o nome e email e tente novamente.',
+        title: `${translations[language].contact.errorMessage}`,
+        description: `${translations[language].contact.errorDescription}`,
         status: 'error',
         duration: 9000,
         isClosable: true
@@ -48,7 +73,10 @@ const Contact = () => {
     <S.ContactSection>
       {isMobile ? (
         <>
-          <Spline scene="https://prod.spline.design/oeRPioBttuqIPdML/scene.splinecode" />
+          <Spline
+            style={{ transform: 'scale(1.5)', marginBottom: '3rem' }}
+            scene="https://prod.spline.design/oeRPioBttuqIPdML/scene.splinecode"
+          />{' '}
           <S.MainContainer>
             <S.FormContainer>
               <S.Heading>{translations[language].contact.header}</S.Heading>
@@ -81,19 +109,10 @@ const Contact = () => {
                     {translations[language].contact.label3}
                   </S.InputTitle>
                   <S.TextArea
-                    value={
-                      language === 'eng'
-                        ? `Hi Yuri, I am ${
-                            name.length <= 0 ? `[your name]` : `${name}`
-                          } and I am interested in talking with you. Please send me a message and CV to ${
-                            email.length <= 0 ? `[your email]` : `${email}`
-                          }. Thanks!`
-                        : `Olá Yuri, eu sou ${
-                            name.length <= 0 ? `[seu nome]` : `${name}`
-                          } e estou interessado em conversar com você. Por favor, envie-me uma mensagem e CV para ${
-                            email.length <= 0 ? `[seu email]` : `${email}`
-                          }. Obrigado!`
-                    }
+                    value={message}
+                    onChange={(e) => {
+                      setMessage(e.target.value)
+                    }}
                     readOnly
                   />
                 </S.Label>
@@ -108,7 +127,10 @@ const Contact = () => {
         <>
           <Box as="header" w="100%" p={4}>
             <Flex justify="space-between" align="center" wrap="nowrap">
-              <Spline scene="https://prod.spline.design/oeRPioBttuqIPdML/scene.splinecode" />
+              <Spline
+                style={{ transform: 'scale(2)' }}
+                scene="https://prod.spline.design/oeRPioBttuqIPdML/scene.splinecode"
+              />
               <S.MainContainer style={{ width: '75%' }}>
                 <S.FormContainer>
                   <S.Heading>{translations[language].contact.header}</S.Heading>
@@ -141,20 +163,11 @@ const Contact = () => {
                         {translations[language].contact.label3}
                       </S.InputTitle>
                       <S.TextArea
-                        value={
-                          language === 'eng'
-                            ? `Hi Yuri, I am ${
-                                name.length <= 0 ? `[your name]` : `${name}`
-                              } and I am interested in talking with you. Please send me a message and CV to ${
-                                email.length <= 0 ? `[your email]` : `${email}`
-                              }. Thanks!`
-                            : `Olá Yuri, eu sou ${
-                                name.length <= 0 ? `[seu nome]` : `${name}`
-                              } e estou interessado em conversar com você. Por favor, envie-me uma mensagem e CV para ${
-                                email.length <= 0 ? `[seu email]` : `${email}`
-                              }. Obrigado!`
-                        }
+                        value={message}
                         readOnly
+                        onChange={(e) => {
+                          setMessage(e.target.value)
+                        }}
                       />
                     </S.Label>
                     <S.Button type="submit">

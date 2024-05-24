@@ -38,7 +38,7 @@ const Header: React.FC = () => {
         </Box>
         {isMobile ? (
           <>
-            <Menu>
+            {/* <Menu>
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon color="white" />}
@@ -55,16 +55,16 @@ const Header: React.FC = () => {
                 ))}
                 <MenuItem bg={'#000'}></MenuItem>
               </MenuList>
-            </Menu>
+            </Menu> */}
             <LanguageSwitcher />
           </>
         ) : (
           <Flex align="center">
-            {headerTexts.map((text, index) => (
+            {/* {headerTexts.map((text, index) => (
               <Button key={index} m={2} variant="outline" colorScheme="teal">
                 {text}
               </Button>
-            ))}
+            ))} */}
             <LanguageSwitcher />
           </Flex>
         )}

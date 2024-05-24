@@ -35,7 +35,11 @@ export const translations: TranslationsType = {
       label3: 'Your Message',
       input1: "What's your name?",
       input2: "What's your web address?",
-      button: 'Send'
+      button: 'Send',
+      successMessage: 'Message Sent',
+      successDescription: 'I will get in touch soon.',
+      errorMessage: 'Error sending message.',
+      errorDescription: 'Please check your name and email and try again.'
     }
   },
   ptbr: {
@@ -67,7 +71,11 @@ export const translations: TranslationsType = {
       label3: 'Sua Mensagem',
       input1: 'Qual é o seu nome?',
       input2: 'Qual é o seu endereço de e-mail?',
-      button: 'Enviar'
+      button: 'Enviar',
+      successMessage: 'Mensagem Enviada',
+      successDescription: 'Em breve entrarei em contato.',
+      errorMessage: 'Error sending message.',
+      errorDescription: 'Please check your name and email and try again.'
     }
   }
 }
