@@ -75,7 +75,7 @@ const Contact = () => {
           <Box style={{ width: '100%', height: '500px', marginBottom: '3rem' }}>
             <Spline
               scene="https://prod.spline.design/oeRPioBttuqIPdML/scene.splinecode"
-              style={{ width: '300px', height: '300px', marginLeft: '-5rem' }} // Ajuste o tamanho aqui conforme necessário
+              style={{ width: '500px', height: '400px', marginLeft: '-5rem' }} // Ajuste o tamanho aqui conforme necessário
             />
           </Box>
           <S.MainContainer>
