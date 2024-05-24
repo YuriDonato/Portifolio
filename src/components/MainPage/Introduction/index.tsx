@@ -1,24 +1,21 @@
 import { useLanguage } from '../../../data/Language'
 import { translations } from '../../../data/Language/translations'
 
-import { Box, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
+import {
+  Box,
+  SimpleGrid,
+  Text,
+  useBreakpointValue,
+  useColorModeValue
+} from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 import * as S from './styles'
+import { techs } from '../../../data/Techs'
 
 const Introduction = () => {
   const { language } = useLanguage()
-  const techs = [
-    'ReactJS',
-    'Lua',
-    'JavaScript',
-    'Typescript',
-    'C#',
-    'Git',
-    'Django',
-    'Firebase'
-  ]
 
   const MotionBox = motion(Box)
   const cardBg = useColorModeValue('rgb(28, 69, 46)', 'rgba(26, 32, 44, 0.7)')
@@ -26,6 +23,8 @@ const Introduction = () => {
     'rgba(255, 255, 255, 0.2)',
     'rgba(255, 255, 255, 0.1)'
   )
+
+  const isMobile = useBreakpointValue({ base: true, md: false })
 
   const [ref, inView] = useInView({
     triggerOnce: true
@@ -45,8 +44,8 @@ const Introduction = () => {
         </S.Description>
       </motion.div>
       <div>
-        <SimpleGrid columns={[1, null, 3]} spacing={10} p={5}>
-          {techs.map((item, index) => (
+        <SimpleGrid columns={[2, null, 5]} spacing={10} p={5}>
+          {Object.values(techs).map((item, index) => (
             <motion.div
               initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -10 }}
@@ -61,23 +60,24 @@ const Introduction = () => {
                 p={5}
                 shadow="lg"
                 cursor="pointer"
-                // whileHover={{
-                //   scale: 1.05,
-                //   rotate: 0.5,
-                //   transition: { duration: 0.2 }
-                // }}
                 _hover={{ boxShadow: 'xl' }}
+                display="flex"
+                flexDirection="column"
+                alignItems="center"
               >
-                <motion.div
-                  initial={{ opacity: 0, x: -10 }}
-                  animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -10 }}
-                  transition={{ duration: 0.8 }}
-                  key={index}
+                <img
+                  style={{ width: `${isMobile ? '80%' : '50%'}` }}
+                  src={item.img}
+                  alt={item.name}
+                />
+                <Text
+                  style={{ marginTop: '1rem' }}
+                  fontSize="xl"
+                  fontWeight="bold"
+                  color="white"
                 >
-                  <Text fontSize="xl" fontWeight="bold" color="white">
-                    {item}
-                  </Text>
-                </motion.div>
+                  {item.name}
+                </Text>
               </MotionBox>
             </motion.div>
           ))}

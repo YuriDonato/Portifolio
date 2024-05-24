@@ -47,7 +47,7 @@ const About = () => {
       </S.MainContainer>
       <div style={{ marginTop: '5rem' }}>
         {/* <CiCircleChevDown color="white" size={'2.5rem'} /> */}
-        <BounceBall />
+        {/* <BounceBall /> */}
       </div>
     </S.SectionContainer>
   )
