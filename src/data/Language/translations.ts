@@ -25,7 +25,11 @@ export const translations: TranslationsType = {
     },
     experience: {
       header: 'My Journey So Far',
-      title: 'Work Highlights'
+      title: 'Work Highlights',
+      buttonHover: 'Visit',
+      button1: 'See Repo',
+      button2: 'See Demo',
+      button3: 'Demo/Repo not avaiable'
     },
     contact: {
       header: 'GET IN TOUCH',
@@ -61,7 +65,11 @@ export const translations: TranslationsType = {
     },
     experience: {
       header: 'Minha Jornada Até Agora',
-      title: 'Destaques Profissionais'
+      title: 'Destaques Profissionais',
+      buttonHover: 'Visitar',
+      button1: 'Ver Repositório',
+      button2: 'Ver Demo',
+      button3: 'Demo/Repositório não disponivel'
     },
     contact: {
       header: 'ENTRE EM CONTATO',

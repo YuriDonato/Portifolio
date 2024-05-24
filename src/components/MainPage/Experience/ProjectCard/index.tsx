@@ -15,6 +15,8 @@ import * as S from './styles'
 
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { useLanguage } from '../../../../data/Language'
+import { translations } from '../../../../data/Language/translations'
 
 interface ProjectCardProps {
   title: string
@@ -36,6 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const [ref, inView] = useInView({
     triggerOnce: true
   })
+  const { language } = useLanguage()
 
   return (
     <S.CardContainer ref={ref}>
@@ -57,20 +60,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               <S.Tech key={index}>{tech}</S.Tech>
             ))}
           </S.TechContainer>
-          <S.ButtonContainer>
-            <S.Button as="a" href={repoLink}>
-              Ver Repositório
-              <S.ButtonTextContainer>
-                <S.ButtonText>Visitar</S.ButtonText>
-              </S.ButtonTextContainer>
-            </S.Button>
-            <S.Button as="a" href={demoLink}>
-              Ver Demo
-              <S.ButtonTextContainer>
-                <S.ButtonText>Visitar</S.ButtonText>
-              </S.ButtonTextContainer>
-            </S.Button>
-          </S.ButtonContainer>
+          {repoLink.length >= 2 && demoLink.length >= 2 ? (
+            <S.ButtonContainer>
+              <S.Button as="a" href={repoLink}>
+                {translations[language].experience.button1}
+                <S.ButtonTextContainer>
+                  <S.ButtonText>
+                    {translations[language].experience.buttonHover}
+                  </S.ButtonText>
+                </S.ButtonTextContainer>
+              </S.Button>
+              <S.Button as="a" href={demoLink}>
+                {translations[language].experience.button2}
+                <S.ButtonTextContainer>
+                  <S.ButtonText>
+                    {translations[language].experience.buttonHover}
+                  </S.ButtonText>
+                </S.ButtonTextContainer>
+              </S.Button>
+            </S.ButtonContainer>
+          ) : (
+            <S.ButtonContainer>
+              <S.Button>{translations[language].experience.button3}</S.Button>
+            </S.ButtonContainer>
+          )}
         </VStack>
       </motion.div>
     </S.CardContainer>

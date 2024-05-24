@@ -66,7 +66,7 @@ const Introduction = () => {
                 alignItems="center"
               >
                 <img
-                  style={{ width: `${isMobile ? '80%' : '50%'}` }}
+                  style={{ width: `${isMobile ? '8%' : '50%'}` }}
                   src={item.img}
                   alt={item.name}
                 />
