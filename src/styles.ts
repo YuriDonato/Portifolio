@@ -1,5 +1,9 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
+export const colors = {
+  defaultMiniTextRGB: '161 230 190'
+}
+
 export const text = {
   tiny: '0.8em',
   medium: '1em',
@@ -16,7 +20,9 @@ export const GlobalCss = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // font-family: 'IM Fell DW Pica', serif;
+    font-family: Poppins, sans-serif;
+    // color: white;
+    overflow-x: hidden;
   }
 
   body {

@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
+import Home from './pages/MainPage'
 import Admin from './pages/Admin'
 import { useState } from 'react'
 import { PropToggleMode } from './models/toggleMode'
@@ -9,10 +9,7 @@ const CustomRoutes = ({ toggleMode, themeName }: PropToggleMode) => {
   return (
     <Routes>
       <Route path="/admin" element={<Admin />}></Route>
-      <Route
-        path="/"
-        element={<Home toggleMode={toggleMode} themeName={themeName} />}
-      ></Route>
+      <Route path="/" element={<Home />}></Route>
     </Routes>
   )
 }
