@@ -3,25 +3,46 @@ import { translations } from '../../../data/Language/translations'
 import { CiCircleChevDown } from 'react-icons/ci'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-
+import { Spinner } from '@chakra-ui/react'
 import * as S from './styles'
-import Spline from '@splinetool/react-spline'
+// import Spline from '@splinetool/react-spline'
 import { BounceBall } from './BounceBall'
+import { useState } from 'react'
+import React, { Suspense } from 'react'
+const Spline = React.lazy(() => import('@splinetool/react-spline'))
 
 const About = () => {
   const { language } = useLanguage()
   const [ref, inView] = useInView({
     triggerOnce: true
   })
+  const [isSplineLoaded, setIsSplineLoaded] = useState(false)
+
+  const Loader = (splineApp: any) => {
+    setIsSplineLoaded(true)
+  }
 
   return (
     <S.SectionContainer ref={ref}>
       <S.MainContainer>
         <S.LeftSideContainer>
-          <Spline
-            style={{ height: '20rem' }}
-            scene="https://prod.spline.design/6A1x6gndgX3eYe1L/scene.splinecode"
-          />
+          <Suspense
+            fallback={
+              <Spinner
+                thickness="4px"
+                speed="0.65s"
+                // emptyColor="gray.200"
+                color="green.500"
+                size="xl"
+                margin={'50%'}
+              />
+            }
+          >
+            <Spline
+              style={{ height: '20rem' }}
+              scene="https://prod.spline.design/6A1x6gndgX3eYe1L/scene.splinecode"
+            />
+          </Suspense>
         </S.LeftSideContainer>
         <S.RightSideContainer>
           <S.LineContainer>

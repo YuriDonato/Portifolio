@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import * as S from './styles'
 import { useLanguage } from '../../../data/Language'
 import { translations } from '../../../data/Language/translations'
@@ -12,6 +12,8 @@ const Contact = () => {
   const [email, setEmail] = useState('')
   const [isAvaiable, setIsAvaiable] = useState(true)
   const [message, setMessage] = useState('')
+
+  const splineRef = useRef<HTMLDivElement>(null)
 
   const toast = useToast()
 
@@ -46,7 +48,7 @@ const Contact = () => {
     )
   }
 
-  const handleSubmit = (event: { preventDefault: () => void }) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (isAvaiable) {
       toast({
@@ -68,14 +70,21 @@ const Contact = () => {
     }
   }
 
+  // const handleWheel = (event: ReactWheelEvent<HTMLDivElement>) => {
+  //   if (splineRef.current && splineRef.current.contains(event.target as Node)) {
+  //     event.stopPropagation()
+  //   }
+  // }
+
   return (
     <S.ContactSection>
       {isMobile ? (
         <>
-          <Box style={{ width: '100%', height: '500px', marginBottom: '3rem' }}>
+          <Box style={{ width: '100%', height: '300px', marginBottom: '3rem' }}>
             <Spline
+              ref={splineRef}
               scene="https://prod.spline.design/oeRPioBttuqIPdML/scene.splinecode"
-              style={{ width: '500px', height: '500px', marginLeft: '-5rem' }} // Ajuste o tamanho aqui conforme necessário
+              style={{ width: '300px', height: '300px' }}
             />
           </Box>
           <S.MainContainer>
@@ -130,14 +139,15 @@ const Contact = () => {
             <Flex justify="space-between" align="center" wrap="nowrap">
               <Box
                 style={{
-                  width: '800px',
+                  width: '500px',
                   height: '500px',
                   marginBottom: '3rem'
                 }}
               >
                 <Spline
+                  ref={splineRef}
                   scene="https://prod.spline.design/oeRPioBttuqIPdML/scene.splinecode"
-                  style={{ width: '800px', height: '500px' }} // Ajuste o tamanho aqui conforme necessário
+                  style={{ width: '500px', height: '500px' }}
                 />
               </Box>
               <S.MainContainer style={{ width: '75%' }}>
