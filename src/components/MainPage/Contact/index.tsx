@@ -19,26 +19,71 @@ const Contact = () => {
 
   const isMobile = useBreakpointValue({ base: true, md: false })
 
+  const messages: { [key: string]: (name: string, email: string) => string } = {
+    eng: (name: string, email: string) =>
+      `Hi Yuri, I am ${
+        name.length <= 0 ? `[your name]` : `${name}`
+      } and I am interested in talking with you. Please send me a message and CV to ${
+        email.length <= 0 ? `[your email]` : `${email}`
+      }. Thanks!`,
+    ptbr: (name: string, email: string) =>
+      `Olá Yuri, eu sou ${
+        name.length <= 0 ? `[seu nome]` : `${name}`
+      } e estou interessado em conversar com você. Por favor, envie-me uma mensagem e CV para ${
+        email.length <= 0 ? `[seu email]` : `${email}`
+      }. Obrigado!`,
+    rus: (name: string, email: string) =>
+      `Привет, Юрий, я ${
+        name.length <= 0 ? `[ваше имя]` : `${name}`
+      } и я заинтересован в разговоре с вами. Пожалуйста, отправьте мне сообщение и резюме на ${
+        email.length <= 0 ? `[ваш email]` : `${email}`
+      }. Спасибо!`,
+    esp: (name: string, email: string) =>
+      `Hola Yuri, soy ${
+        name.length <= 0 ? `[tu nombre]` : `${name}`
+      } y estoy interesado en hablar contigo. Por favor, envíame un mensaje y CV a ${
+        email.length <= 0 ? `[tu email]` : `${email}`
+      }. ¡Gracias!`,
+    fr: (name: string, email: string) =>
+      `Salut Yuri, je suis ${
+        name.length <= 0 ? `[votre nom]` : `${name}`
+      } et je suis intéressé à parler avec vous. Veuillez m'envoyer un message et un CV à ${
+        email.length <= 0 ? `[votre email]` : `${email}`
+      }. Merci !`
+  }
+
+  const setMessageBasedOnLanguage = (
+    language: string,
+    name: string,
+    email: string
+  ) => {
+    if (language in messages) {
+      return messages[language](name, email)
+    } else {
+      return messages['eng'](name, email) // Default to English if language not found
+    }
+  }
+
   useEffect(() => {
-    language === 'eng'
-      ? setMessage(
-          `Hi Yuri, I am ${
-            name.length <= 0 ? `[your name]` : `${name}`
-          } and I am interested in talking with you. Please send me a message and CV to ${
-            email.length <= 0 ? `[your email]` : `${email}`
-          }. Thanks!`
-        )
-      : setMessage(
-          `Olá Yuri, eu sou ${
-            name.length <= 0 ? `[seu nome]` : `${name}`
-          } e estou interessado em conversar com você. Por favor, envie-me uma mensagem e CV para ${
-            email.length <= 0 ? `[seu email]` : `${email}`
-          }. Obrigado!`
-        )
-  }, [name, email])
+    if (name.length >= 1 && email.length >= 1) {
+      setIsAvaiable(true)
+    } else {
+      setIsAvaiable(false)
+    }
+    setMessage(setMessageBasedOnLanguage(language, name, email))
+  }, [language, name, email])
 
   const createMessage = async () => {
-    const newData = message
+    const currentDate = new Date()
+    const day = currentDate.getDate()
+    const month = currentDate.getMonth() + 1 // Adicionando 1 porque os meses são zero indexados
+    const year = currentDate.getFullYear()
+    const hours = currentDate.getHours()
+    const minutes = currentDate.getMinutes()
+    const seconds = currentDate.getSeconds()
+
+    const dateString = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`
+    const newData = { message: message, date: dateString }
     const newKey = db.realtimePush(
       db.realtimeChild(db.realtimeRef(db.realtimeDatabase), 'messages')
     ).key
@@ -59,6 +104,9 @@ const Contact = () => {
         isClosable: true
       })
       createMessage()
+      setName('')
+      setEmail('')
+      setMessage(setMessageBasedOnLanguage(language, name, email))
     } else {
       toast({
         title: `${translations[language].contact.errorMessage}`,
@@ -69,12 +117,6 @@ const Contact = () => {
       })
     }
   }
-
-  // const handleWheel = (event: ReactWheelEvent<HTMLDivElement>) => {
-  //   if (splineRef.current && splineRef.current.contains(event.target as Node)) {
-  //     event.stopPropagation()
-  //   }
-  // }
 
   return (
     <S.ContactSection>

@@ -82,8 +82,131 @@ export const translations: TranslationsType = {
       button: 'Enviar',
       successMessage: 'Mensagem Enviada',
       successDescription: 'Em breve entrarei em contato.',
-      errorMessage: 'Error sending message.',
-      errorDescription: 'Please check your name and email and try again.'
+      errorMessage: 'Erro ao enviar mensagem.',
+      errorDescription:
+        'Por favor, verifique seu nome e email e tente novamente.'
+    }
+  },
+  rus: {
+    header: {
+      text1: 'О нас',
+      text2: 'Работы',
+      text3: 'Контакты'
+    },
+    about: {
+      title: 'Я',
+      description:
+        'Превращаю идеи в интерактивные и эффективные веб-реальности.'
+    },
+    introduction: {
+      header: 'ВВЕДЕНИЕ',
+      title: 'Обзор',
+      description:
+        'Я ярый сторонник чистого, понятного и масштабируемого кода, который точно соответствует потребностям клиентов и бизнеса. Мой профессиональный путь характеризуется приверженностью командной работе и неустанным любопытством к изучению новых технологий. Я ориентирован на результат и процветаю в средах, которые принимают гибкие методологии и фреймворки Scrum. Я верю в приоритетность пользовательского опыта — дело не только в создании веб-сайта или программного обеспечения, но и в создании опыта, который резонирует и удовлетворяет. Я нахожу радость в вызовах и творчестве программирования; это не просто моя карьера, это игровая площадка для инноваций.'
+    },
+    experience: {
+      header: 'Мое Путешествие До сих Пор',
+      title: 'Основные Работы',
+      buttonHover: 'Посетить',
+      button1: 'Смотреть Репозиторий',
+      button2: 'Смотреть Демонстрацию',
+      button3: 'Демо/Репозиторий недоступен'
+    },
+    contact: {
+      header: 'СВЯЗАТЬСЯ',
+      title: 'Контакт.',
+      label1: 'Ваше Имя',
+      label2: 'Ваш Email',
+      label3: 'Ваше Сообщение',
+      input1: 'Как вас зовут?',
+      input2: 'Какой у вас адрес электронной почты?',
+      button: 'Отправить',
+      successMessage: 'Сообщение Отправлено',
+      successDescription: 'Я скоро свяжусь с вами.',
+      errorMessage: 'Ошибка отправки сообщения.',
+      errorDescription:
+        'Пожалуйста, проверьте ваше имя и email и попробуйте снова.'
+    }
+  },
+  esp: {
+    header: {
+      text1: 'Acerca de',
+      text2: 'Trabajos',
+      text3: 'Contacto'
+    },
+    about: {
+      title: 'Soy',
+      description:
+        'Convirtiendo ideas en realidades web interactivas y eficientes.'
+    },
+    introduction: {
+      header: 'INTRODUCCIÓN',
+      title: 'Resumen',
+      description:
+        'Soy un ferviente defensor del código limpio, comprensible y escalable que satisface precisamente las necesidades del cliente y del negocio. Mi trayectoria profesional se caracteriza por el compromiso con la colaboración en equipo y una curiosidad incesante por aprender nuevas tecnologías. Estoy orientado a resultados y prospero en entornos que adoptan metodologías ágiles y marcos Scrum. Creo en la prioridad de la experiencia del usuario: no se trata solo de construir un sitio web o software, sino de crear experiencias que resuenen y satisfagan. Encuentro alegría en los desafíos y la creatividad de la programación; no es solo mi carrera, es un terreno de juego para la innovación.'
+    },
+    experience: {
+      header: 'Mi Viaje Hasta Ahora',
+      title: 'Aspectos Destacados del Trabajo',
+      buttonHover: 'Visitar',
+      button1: 'Ver Repositorio',
+      button2: 'Ver Demo',
+      button3: 'Demo/Repositorio no disponible'
+    },
+    contact: {
+      header: 'PONERSE EN CONTACTO',
+      title: 'Contacto.',
+      label1: 'Tu Nombre',
+      label2: 'Tu Email',
+      label3: 'Tu Mensaje',
+      input1: '¿Cómo te llamas?',
+      input2: '¿Cuál es tu dirección de correo electrónico?',
+      button: 'Enviar',
+      successMessage: 'Mensaje Enviado',
+      successDescription: 'Me pondré en contacto pronto.',
+      errorMessage: 'Error al enviar el mensaje.',
+      errorDescription:
+        'Por favor verifica tu nombre y correo electrónico e intenta nuevamente.'
+    }
+  },
+  fr: {
+    header: {
+      text1: 'À propos',
+      text2: 'Travaux',
+      text3: 'Contact'
+    },
+    about: {
+      title: 'Je suis',
+      description:
+        'Transformer des idées en réalités web interactives et efficaces.'
+    },
+    introduction: {
+      header: 'INTRODUCTION',
+      title: 'Aperçu',
+      description:
+        'Je suis un fervent défenseur d’un code propre, compréhensible et évolutif qui répond précisément aux besoins des clients et des entreprises. Mon parcours professionnel se caractérise par un engagement envers la collaboration en équipe et une curiosité incessante pour apprendre de nouvelles technologies. Je suis orienté vers les résultats et je prospère dans des environnements qui adoptent des méthodologies agiles et des cadres Scrum. Je crois en la priorité de l’expérience utilisateur — il ne s’agit pas seulement de créer un site web ou un logiciel, mais de créer des expériences qui résonnent et satisfont. Je trouve de la joie dans les défis et la créativité de la programmation; ce n’est pas seulement ma carrière, c’est un terrain de jeu pour l’innovation.'
+    },
+    experience: {
+      header: 'Mon Parcours Jusqu’à Présent',
+      title: 'Points Forts du Travail',
+      buttonHover: 'Visiter',
+      button1: 'Voir le Repo',
+      button2: 'Voir la Démo',
+      button3: 'Démo/Repo non disponible'
+    },
+    contact: {
+      header: 'PRENDRE CONTACT',
+      title: 'Contact.',
+      label1: 'Votre Nom',
+      label2: 'Votre Email',
+      label3: 'Votre Message',
+      input1: 'Quel est votre nom?',
+      input2: 'Quelle est votre adresse email?',
+      button: 'Envoyer',
+      successMessage: 'Message Envoyé',
+      successDescription: 'Je vous contacterai bientôt.',
+      errorMessage: 'Erreur lors de l’envoi du message.',
+      errorDescription: 'Veuillez vérifier votre nom et email et réessayer.'
     }
   }
 }

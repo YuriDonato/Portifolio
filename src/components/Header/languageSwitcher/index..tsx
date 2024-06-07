@@ -43,6 +43,23 @@ const LanguageSwitcher: React.FC = () => {
         >
           Português
         </MenuItem>
+        <MenuItem
+          color={'white'}
+          bg={'#000'}
+          onClick={() => setLanguage('esp')}
+        >
+          Spanish
+        </MenuItem>
+        <MenuItem
+          color={'white'}
+          bg={'#000'}
+          onClick={() => setLanguage('rus')}
+        >
+          Pусский
+        </MenuItem>
+        <MenuItem color={'white'} bg={'#000'} onClick={() => setLanguage('fr')}>
+          Français
+        </MenuItem>
       </MenuList>
     </Menu>
   )

@@ -131,5 +131,204 @@ export const ProjectsTranslation = {
       repoLink: 'https://github.com/YuriDonato/talesoferenix',
       demoLink: 'https://talesoferenix.vercel.app/'
     }
+  },
+  rus: {
+    project1: {
+      title: 'Домашняя страница фанатов Elden Ring',
+      subtitle:
+        'Проект, разработанный в рамках курса EBAC Fullstack Python Developer',
+      description: [
+        'Этот проект состоит из статической веб-страницы, которая служит фан-страницей для игры Elden Ring, созданной в начале моих исследований для практики основ HTML/CSS.',
+        'На этом сайте я делюсь различными функциями, такими как карусель изображений для демонстрации скриншотов и концепт-арта игры, встроенное воспроизведение видео для трейлеров или других медиа, связанных с Elden Ring, и контактная форма для пользователей, чтобы связаться с администраторами сайта.',
+        'Проект помог мне изучить и применить основы веб-разработки и дизайна.'
+      ],
+      technologies: ['HTML'],
+      repoLink: 'https://github.com/YuriDonato/Elden-Ring-Fan-Website/',
+      demoLink: 'https://elden-ring-fan-website-yuri.vercel.app/'
+    },
+    project5: {
+      title: 'Анестезия за пределами хирургии',
+      subtitle: 'Фриланс - Веб-приложение для ветеринарной анестезии',
+      description: [
+        'Я был нанят для выполнения фриланс-заказа, где я создал веб-приложение для ветеринарной анестезии с нуля.',
+        'Система включает в себя систему аутентификации пользователей и подключение к базе данных для повышения безопасности платформы, с базой данных, размещенной на Google Firebase, и зонами регистрации для домашних животных и клиник. Также используется облачное хранилище через Firebase для хранения изображений, видео и информации о пациентах, с обновлениями в реальном времени благодаря Firebase Realtime Database.',
+        'Система в настоящее время используется, поэтому я не могу поделиться ссылкой на страницу или репозиторий. Однако я открыт для обсуждения моего опыта в этом проекте.'
+      ],
+      technologies: ['HTML'],
+      repoLink: '#',
+      demoLink: '#'
+    },
+    project3: {
+      title: 'eFood',
+      subtitle:
+        'Проект, разработанный в рамках курса EBAC Fullstack Python Developer',
+      description: [
+        'Онлайн-платформа для изучения и заказа блюд из местных ресторанов. Приложение позволяет пользователям просматривать меню ресторанов, делать заказы и быстро и легко оформлять их.',
+        'Во время разработки проекта я интегрировал API для динамического получения и отображения информации о ресторанах, меню и ценах. Я также внедрил Redux для эффективного управления состоянием приложения, использовал Formik для упрощения создания и проверки интерактивных форм и стилизовал компоненты с помощью Styled Components, чтобы обеспечить модульность и масштабируемость.',
+        'Я также интегрировал TypeScript в проект, используя преимущества статической типизации для обеспечения надежности и безопасности кода.'
+      ],
+      technologies: ['HTML'],
+      repoLink: 'https://github.com/YuriDonato/eFood',
+      demoLink: 'https://efoodyuri.vercel.app/'
+    },
+    project4: {
+      title: 'ePlay',
+      subtitle:
+        'Проект, разработанный в рамках курса EBAC Fullstack Python Developer',
+      description: [
+        'Эксклюзивный интернет-магазин для изучения и приобретения лучших игр для ПК, PS5, Nintendo Switch и Xbox. Приложение обеспечивает полный опыт для любителей игр, позволяя им быстро и удобно находить и покупать любимые игры.',
+        'Во время разработки проекта я интегрировал API для динамического получения и отображения информации об играх, платформах и ценах. Я также внедрил Redux для эффективного управления состоянием приложения, использовал Formik для упрощения создания и проверки интерактивных форм и стилизовал компоненты с помощью Styled Components, чтобы обеспечить привлекательный и согласованный интерфейс пользователя в интернет-магазине.',
+        'Я интегрировал TypeScript в проект, используя преимущества статической типизации для обеспечения надежности и безопасности кода.'
+      ],
+      technologies: ['HTML'],
+      repoLink: 'https://github.com/YuriDonato/eplay',
+      demoLink: 'https://eplay-one.vercel.app/'
+    },
+    project7: {
+      title: 'Сказания Эреникса',
+      subtitle:
+        'Личный блог для публикации фантастических средневековых историй и книг.',
+      description: [
+        'Сказания Эреникса - это мой личный блог, где я публикую свои собственные фантастические средневековые истории и книги.',
+        'На этом сайте я делюсь растущей коллекцией рассказов, действие которых происходит в мифическом мире Эреникс. Включены функции, такие как удобный интерфейс для чтения моих историй и раздел комментариев, где читатели могут обсуждать и оставлять отзывы.',
+        'Присоединяйтесь ко мне в исследовании богатого и воображаемого мира Эреникс через мои письменные работы.'
+      ],
+      technologies: ['HTML'],
+      repoLink: 'https://github.com/YuriDonato/talesoferenix',
+      demoLink: 'https://talesoferenix.vercel.app/'
+    }
+  },
+  esp: {
+    project1: {
+      title: 'Página de Inicio de Fans de Elden Ring',
+      subtitle:
+        'Proyecto desarrollado como parte del curso de Desarrollador Fullstack Python de EBAC',
+      description: [
+        'Este proyecto consiste en una página web estática que sirve como página de fans del juego Elden Ring, creada al principio de mis estudios para practicar los fundamentos de HTML/CSS.',
+        'En este sitio, comparto varias características, como un carrusel de imágenes para mostrar capturas de pantalla y arte conceptual del juego, reproducción de video integrada para tráilers u otros medios relacionados con Elden Ring, y un formulario de contacto para que los usuarios se pongan en contacto con los administradores del sitio.',
+        'El proyecto me ayudó a aprender y aplicar los fundamentos del desarrollo y diseño web.'
+      ],
+      technologies: ['HTML'],
+      repoLink: 'https://github.com/YuriDonato/Elden-Ring-Fan-Website/',
+      demoLink: 'https://elden-ring-fan-website-yuri.vercel.app/'
+    },
+    project5: {
+      title: 'Anestesia Más Allá de la Cirugía',
+      subtitle: 'Trabajo Freelance - Aplicación Web para Anestesia Veterinaria',
+      description: [
+        'Fui contratado para un trabajo freelance donde creé una aplicación web para anestesia veterinaria desde cero.',
+        'El sistema incluye un sistema de autenticación de inicio de sesión y conexión a la base de datos para mejorar la seguridad de la plataforma, con una base de datos alojada en Google Firebase y áreas de registro para Mascotas y Clínicas. También utiliza almacenamiento en la nube a través de Firebase para almacenar imágenes, videos e información de pacientes, con actualizaciones en tiempo real gracias a Firebase Realtime Database.',
+        'El sistema está actualmente en uso, por lo que no puedo compartir el enlace de la página o el repositorio. Sin embargo, estoy abierto a discutir mi experiencia en este proyecto.'
+      ],
+      technologies: ['HTML'],
+      repoLink: '#',
+      demoLink: '#'
+    },
+    project3: {
+      title: 'eFood',
+      subtitle:
+        'Proyecto desarrollado como parte del curso de Desarrollador Fullstack Python de EBAC',
+      description: [
+        'Una plataforma en línea para explorar y ordenar platos de restaurantes locales. La aplicación permite a los usuarios navegar por los menús de los restaurantes, realizar pedidos y finalizar la compra de manera rápida y fácil.',
+        'Durante el desarrollo del proyecto, integré API para obtener y mostrar dinámicamente información sobre restaurantes, menús y precios. También implementé Redux para gestionar eficientemente el estado de la aplicación, utilicé Formik para simplificar la creación y validación de formularios interactivos y estilizar componentes utilizando Styled Components para garantizar la modularidad y escalabilidad.',
+        'También integré TypeScript en el proyecto, aprovechando los beneficios de la tipificación estática para garantizar la robustez y seguridad del código.'
+      ],
+      technologies: ['HTML'],
+      repoLink: 'https://github.com/YuriDonato/eFood',
+      demoLink: 'https://efoodyuri.vercel.app/'
+    },
+    project4: {
+      title: 'ePlay',
+      subtitle:
+        'Proyecto desarrollado como parte del curso de Desarrollador Fullstack Python de EBAC',
+      description: [
+        'Una tienda en línea exclusiva para explorar y adquirir los mejores juegos para PC, PS5, Nintendo Switch y Xbox. La aplicación proporciona una experiencia completa para los entusiastas de los juegos, permitiéndoles encontrar y comprar títulos favoritos de manera rápida y conveniente.',
+        'Durante el desarrollo del proyecto, integré API para obtener y mostrar dinámicamente información sobre juegos, plataformas y precios. También implementé Redux para gestionar eficientemente el estado de la aplicación, utilicé Formik para simplificar la creación y validación de formularios interactivos y estilizar componentes utilizando Styled Components para garantizar una interfaz de usuario atractiva y consistente en toda la tienda en línea.',
+        'Integré TypeScript en el proyecto, aprovechando los beneficios de la tipificación estática para garantizar la robustez y seguridad del código.'
+      ],
+      technologies: ['HTML'],
+      repoLink: 'https://github.com/YuriDonato/eplay',
+      demoLink: 'https://eplay-one.vercel.app/'
+    },
+    project7: {
+      title: 'Cuentos de Erenix',
+      subtitle:
+        'Blog personal para publicar historias y libros de fantasía medieval.',
+      description: [
+        'Cuentos de Erenix es mi blog personal donde publico mis propias historias y libros de fantasía medieval.',
+        'En este sitio, comparto una colección creciente de narrativas ambientadas en el mundo mítico de Erenix. Las características incluyen una interfaz fácil de usar para leer mis historias y una sección de comentarios para que los lectores puedan discutir y proporcionar comentarios.',
+        'Únete a mí para explorar el rico y imaginativo mundo de Erenix a través de mis obras escritas.'
+      ],
+      technologies: ['HTML'],
+      repoLink: 'https://github.com/YuriDonato/talesoferenix',
+      demoLink: 'https://talesoferenix.vercel.app/'
+    }
+  },
+  fr: {
+    project1: {
+      title: 'Page d’accueil des fans de Elden Ring',
+      subtitle:
+        'Projet développé dans le cadre du cours de Développeur Fullstack Python de EBAC',
+      description: [
+        'Ce projet consiste en une page Web statique qui sert de page de fans pour le jeu Elden Ring, créée au début de mes études pour pratiquer les bases du HTML/CSS.',
+        'Sur ce site, je partage diverses fonctionnalités telles qu’un carrousel d’images pour présenter des captures d’écran et des concepts artistiques du jeu, une lecture vidéo intégrée pour des bandes-annonces ou d’autres médias liés à Elden Ring, et un formulaire de contact pour permettre aux utilisateurs de contacter les administrateurs du site.',
+        'Le projet m’a aidé à apprendre et à appliquer les bases du développement et du design Web.'
+      ],
+      technologies: ['HTML'],
+      repoLink: 'https://github.com/YuriDonato/Elden-Ring-Fan-Website/',
+      demoLink: 'https://elden-ring-fan-website-yuri.vercel.app/'
+    },
+    project5: {
+      title: 'Anesthésie au-delà de la chirurgie',
+      subtitle:
+        'Travail freelance - Application Web pour l’anesthésie vétérinaire',
+      description: [
+        'J’ai été chargé d’un travail freelance où j’ai créé une application Web pour l’anesthésie vétérinaire à partir de zéro.',
+        'Le système comprend un système d’authentification de connexion et une connexion à la base de données pour améliorer la sécurité de la plateforme, avec une base de données hébergée sur Google Firebase et des zones d’inscription pour les animaux de compagnie et les cliniques. Il utilise également le stockage en nuage via Firebase pour stocker des images, des vidéos et des informations sur les patients, avec des mises à jour en temps réel grâce à Firebase Realtime Database.',
+        'Le système est actuellement utilisé, je ne peux donc pas partager le lien de la page ou du dépôt. Cependant, je suis ouvert à discuter de mon expérience sur ce projet.'
+      ],
+      technologies: ['HTML'],
+      repoLink: '#',
+      demoLink: '#'
+    },
+    project3: {
+      title: 'eFood',
+      subtitle:
+        'Projet développé dans le cadre du cours de Développeur Fullstack Python de EBAC',
+      description: [
+        'Une plateforme en ligne pour explorer et commander des plats de restaurants locaux. L’application permet aux utilisateurs de parcourir les menus des restaurants, de passer des commandes et de régler rapidement et facilement.',
+        'Lors du développement du projet, j’ai intégré des API pour obtenir et afficher dynamiquement des informations sur les restaurants, les menus et les prix. J’ai également implémenté Redux pour gérer efficacement l’état de l’application, utilisé Formik pour simplifier la création et la validation de formulaires interactifs, et stylisé les composants à l’aide de Styled Components pour garantir la modularité et l’évolutivité.',
+        'J’ai également intégré TypeScript au projet, en tirant parti des avantages de la typage statique pour garantir la robustesse et la sécurité du code.'
+      ],
+      technologies: ['HTML'],
+      repoLink: 'https://github.com/YuriDonato/eFood',
+      demoLink: 'https://efoodyuri.vercel.app/'
+    },
+    project4: {
+      title: 'ePlay',
+      subtitle:
+        'Projet développé dans le cadre du cours de Développeur Fullstack Python de EBAC',
+      description: [
+        'Une boutique en ligne exclusive pour explorer et acquérir les meilleurs jeux pour PC, PS5, Nintendo Switch et Xbox. L’application offre une expérience complète pour les passionnés de jeux, leur permettant de trouver et d’acheter leurs titres préférés rapidement et facilement.',
+        'Lors du développement du projet, j’ai intégré des API pour obtenir et afficher dynamiquement des informations sur les jeux, les plateformes et les prix. J’ai également implémenté Redux pour gérer efficacement l’état de l’application, utilisé Formik pour simplifier la création et la validation de formulaires interactifs, et stylisé les composants à l’aide de Styled Components pour garantir une interface utilisateur attrayante et cohérente dans toute la boutique en ligne.',
+        'J’ai intégré TypeScript au projet, en tirant parti des avantages de la typage statique pour garantir la robustesse et la sécurité du code.'
+      ],
+      technologies: ['HTML'],
+      repoLink: 'https://github.com/YuriDonato/eplay',
+      demoLink: 'https://eplay-one.vercel.app/'
+    },
+    project7: {
+      title: 'Contes d’Erenix',
+      subtitle:
+        'Blog personnel pour la publication d’histoires et de livres fantastiques médiévaux.',
+      description: [
+        'Contes d’Erenix est mon blog personnel où je publie mes propres histoires et livres fantastiques médiévaux.',
+        'Sur ce site, je partage une collection croissante de récits se déroulant dans le monde mythique d’Erenix. Les fonctionnalités incluent une interface conviviale pour lire mes histoires et une section de commentaires pour que les lecteurs puissent discuter et donner leur avis.',
+        'Rejoignez-moi pour explorer le monde riche et imaginatif d’Erenix à travers mes œuvres écrites.'
+      ],
+      technologies: ['HTML'],
+      repoLink: 'https://github.com/YuriDonato/talesoferenix',
+      demoLink: 'https://talesoferenix.vercel.app/'
+    }
   }
 }
