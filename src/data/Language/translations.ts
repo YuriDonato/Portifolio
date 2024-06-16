@@ -208,5 +208,85 @@ export const translations: TranslationsType = {
       errorMessage: 'Erreur lors de l’envoi du message.',
       errorDescription: 'Veuillez vérifier votre nom et email et réessayer.'
     }
+  },
+  it: {
+    header: {
+      text1: 'Chi Sono',
+      text2: 'Esperienze',
+      text3: 'Contatti'
+    },
+    about: {
+      title: 'Sono',
+      description: 'Trasformo Idee in Realtà Web Interattive ed Efficienti.'
+    },
+    introduction: {
+      header: 'INTRODUZIONE',
+      title: 'Panoramica',
+      description:
+        "Sono un fervente sostenitore del codice pulito, comprensibile e scalabile che soddisfa esattamente le esigenze dei clienti e delle aziende. Il mio percorso professionale è caratterizzato dall'impegno per la collaborazione in team e da una curiosità incessante per l'apprendimento di nuove tecnologie. Sono orientato ai risultati e prospero in ambienti che adottano metodologie agili e framework Scrum. Credo nell'importanza dell'esperienza utente: non si tratta solo di costruire un sito web o un software, ma di creare esperienze che risuonino e soddisfino. Trovo gioia nelle sfide e nella creatività della programmazione; non è solo la mia carriera, è un parco giochi per l'innovazione."
+    },
+    experience: {
+      header: 'Il Mio Percorso Finora',
+      title: 'Punti Salienti del Lavoro',
+      buttonHover: 'Visita',
+      button1: 'Vedi Repo',
+      button2: 'Vedi Demo',
+      button3: 'Demo/Repo non disponibile'
+    },
+    contact: {
+      header: 'CONTATTAMI',
+      title: 'Contatti.',
+      label1: 'Il Tuo Nome',
+      label2: 'La Tua Email',
+      label3: 'Il Tuo Messaggio',
+      input1: 'Qual è il tuo nome?',
+      input2: 'Qual è il tuo indirizzo email?',
+      button: 'Invia',
+      successMessage: 'Messaggio Inviato',
+      successDescription: 'Ti contatterò a breve.',
+      errorMessage: "Errore nell'invio del messaggio.",
+      errorDescription: 'Per favore controlla il tuo nome e email e riprova.'
+    }
+  },
+  de: {
+    header: {
+      text1: 'Über',
+      text2: 'Erfahrungen',
+      text3: 'Kontakt'
+    },
+    about: {
+      title: 'Ich bin',
+      description:
+        'Verwandle Ideen in interaktive und effiziente Web-Realitäten.'
+    },
+    introduction: {
+      header: 'EINFÜHRUNG',
+      title: 'Überblick',
+      description:
+        'Ich bin ein leidenschaftlicher Verfechter von sauberem, verständlichem und skalierbarem Code, der genau den Anforderungen von Kunden und Unternehmen entspricht. Mein beruflicher Werdegang ist geprägt von Engagement für die Teamarbeit und einer unaufhörlichen Neugier auf neue Technologien. Ich bin ergebnisorientiert und gedeihe in Umgebungen, die agile Methoden und Scrum-Frameworks annehmen. Ich glaube daran, die Benutzererfahrung zu priorisieren – es geht nicht nur darum, eine Website oder Software zu erstellen, sondern um das Schaffen von Erlebnissen, die ansprechen und zufriedenstellen. Ich finde Freude an den Herausforderungen und der Kreativität des Programmierens; es ist nicht nur meine Karriere, sondern ein Spielplatz für Innovationen.'
+    },
+    experience: {
+      header: 'Meine Reise Bis Jetzt',
+      title: 'Arbeitshighlights',
+      buttonHover: 'Besuchen',
+      button1: 'Repo ansehen',
+      button2: 'Demo ansehen',
+      button3: 'Demo/Repo nicht verfügbar'
+    },
+    contact: {
+      header: 'KONTAKTIEREN SIE MICH',
+      title: 'Kontakt.',
+      label1: 'Ihr Name',
+      label2: 'Ihre Email',
+      label3: 'Ihre Nachricht',
+      input1: 'Wie heißen Sie?',
+      input2: 'Wie lautet Ihre E-Mail-Adresse?',
+      button: 'Senden',
+      successMessage: 'Nachricht Gesendet',
+      successDescription: 'Ich werde mich bald bei Ihnen melden.',
+      errorMessage: 'Fehler beim Senden der Nachricht.',
+      errorDescription:
+        'Bitte überprüfen Sie Ihren Namen und Ihre E-Mail und versuchen Sie es erneut.'
+    }
   }
 }
