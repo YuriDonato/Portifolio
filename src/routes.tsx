@@ -4,6 +4,7 @@ import Admin from './pages/Admin'
 import { useState } from 'react'
 import { PropToggleMode } from './models/toggleMode'
 import { useAuth } from './data/AuthProvider'
+import Test from './components/Test'
 
 const CustomRoutes = ({ toggleMode, themeName }: PropToggleMode) => {
   return (
