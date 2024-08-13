@@ -16,8 +16,4 @@ Projetos
 
 Botão Voltar
 
-
-
-
-
 agora um componente reutilizavel para servir de pagina de informacoes do projeto clicado (ao clicar ver projeto vai para essa pagina)
