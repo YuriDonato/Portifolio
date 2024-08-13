@@ -10,7 +10,7 @@ const CustomRoutes = ({ toggleMode, themeName }: PropToggleMode) => {
   return (
     <Routes>
       <Route path="/admin" element={<Admin />}></Route>
-      <Route path="/" element={<Test />}></Route>
+      <Route path="/" element={<Home />}></Route>
     </Routes>
   )
 }
