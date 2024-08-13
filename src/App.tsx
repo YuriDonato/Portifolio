@@ -8,7 +8,7 @@ import { darkModeColors, lightModeColors } from './theme'
 import './scrollbar.css'
 import { AuthProvider } from './data/AuthProvider'
 import { LanguageProvider } from './data/Language'
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/react'
 
 const theme = extendTheme({
   styles: {
